@@ -1,3 +1,32 @@
 .post-photo {
 	width: 300px;
 }
+
+/* Physical styling */
+
+body {
+	margin: 0;
+}
+.container {
+
+}
+
+header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+}
+
+.content {
+	margin-top: 100px;
+}
+
+/* Design Styling */
+
+header {
+	background: lightblue;
+
+}
