@@ -18,11 +18,32 @@ header {
 	height: 100px;
 	position: fixed;
 	top: 0;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 .content {
 	margin-top: 100px;
 }
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 20px;
+}
+nav, .nav-image {
+	 display: inline-block;
+	 line-height: 100px;
+}
+
+.nav-image {
+	margin-left: 20px;
+}
+
 
 /* Design Styling */
 
