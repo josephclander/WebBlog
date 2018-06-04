@@ -14,7 +14,6 @@ body, ul, p {
 
 a {
 	text-decoration: none;
-	color: white;
 }
 
 
@@ -47,6 +46,10 @@ header {
 	top: 0;
 	z-index: 10;
 
+}
+
+header a {
+	color: white;
 }
 
 footer {
