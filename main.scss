@@ -4,13 +4,28 @@
 
 /* Physical styling */
 
-body {
+/***************************************
+Resets
+***************************************/
+
+body, ul, p {
 	margin: 0;
+}
+
+.bg-container {
+	margin: 0;
+	width: 100%;
+	background: url("images/bg_leather.jpg") no-repeat center center;
+	position: fixed;
+	height: 100vh;
 }
 
 .container {
 	margin: 0 auto;
+	position: relative;
 	max-width: 800px;
+	z-index: 5;
+	background: #ffffff;
 }
 
 header {
@@ -20,8 +35,8 @@ header {
 	height: 100px;
 	position: fixed;
 	top: 0;
-	font-size: 1.2em;
-	font-weight: bold;
+	z-index: 10;
+
 }
 
 .content {
@@ -46,10 +61,19 @@ nav, .nav-image {
 	margin-left: 20px;
 }
 
+footer {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	height: 40px;
+	background: #ffffff;
+}
+
 
 /* Design Styling */
 
 header {
 	background: lightblue;
-
+	font-size: 1.2em;
+	font-weight: bold;
 }
