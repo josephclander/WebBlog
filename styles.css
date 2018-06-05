@@ -156,4 +156,12 @@ footer {
 footer ul {
   padding-left: 0; }
 
+/***************************************
+Media Queries
+***************************************/
+/* Medium width screens */
+@media only screen and (max-width: 850px) {
+  .post {
+    max-width: 600px; } }
+
 /*# sourceMappingURL=styles.css.map */
