@@ -174,7 +174,8 @@ Media Queries
     width: 100%;
     box-sizing: border-box;
     border: none;
-    border-top: 1px solid lightgrey; }
+    border-top: 1px solid lightgrey;
+    line-height: 1.6em; }
 
   .post-photo {
     width: 100%;
