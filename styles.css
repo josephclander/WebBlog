@@ -125,11 +125,18 @@ header {
   font-weight: bold;
   box-shadow: 0px 3px 3px #424242; }
 
-header a {
+header a, header a:visited, .contact a, .contact a:visited {
   color: white; }
 
-a:hover {
+p > a, p > a:visited {
+  color: #424242;
+  font-weight: bold; }
+
+header a:hover, .contact a:hover {
   color: #424242; }
+
+p > a:hover {
+  background: pink; }
 
 .post {
   box-shadow: 3px 3px 3px #424242;
