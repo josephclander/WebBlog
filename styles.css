@@ -14,7 +14,7 @@ a {
 /***************************************
 Tools
 ***************************************/
-.centre-vertical {
+.desktop-centre-vertical {
   /* Make parent div relative */
   position: absolute;
   top: 50%;
@@ -47,6 +47,9 @@ header {
   position: fixed;
   top: 0;
   z-index: 10; }
+
+.down-arrow {
+  display: none; }
 
 .icon {
   height: 70px;
@@ -163,12 +166,58 @@ Media Queries
 @media only screen and (max-width: 850px) {
   .post {
     max-width: 600px; } }
+/* Small width screens */
 @media only screen and (max-width: 375px) {
   .post {
     max-width: 300px; }
 
   .post-photo {
     width: 300px;
-    margin: 0 0 16px 0; } }
+    margin: 0 0 16px 0; }
+
+  header {
+    height: 100vh;
+    position: inherit;
+    font-size: 1.8em; }
+
+  .bg-container {
+    top: 0;
+    z-index: -1; }
+
+  .mobile {
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+  .nav-bar {
+    margin-left: 0;
+    top: 60%;
+    width: 300px;
+    text-align: center;
+    line-height: 1.8em; }
+
+  .nav-image {
+    margin-left: 0;
+    top: 30%; }
+
+  .icon {
+    height: 200px; }
+
+  .name {
+    border-bottom: 1px solid #424242; }
+
+  .down-arrow {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+  .content {
+    margin-top: 0; }
+
+  footer {
+    height: 60px;
+    line-height: 60px;
+    font-size: 2.4em; } }
 
 /*# sourceMappingURL=styles.css.map */
