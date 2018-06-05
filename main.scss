@@ -3,12 +3,13 @@ Variables
 ***************************************/
 
 $bg-grey: #424242;
+$blue-theme: cadetblue;
 
 /***************************************
 Resets
 ***************************************/
 
-body, ul, p {
+body, ul, h1, h2, h3 {
 	margin: 0;
 }
 
@@ -16,6 +17,22 @@ a {
 	text-decoration: none;
 }
 
+/***************************************
+Tools
+***************************************/
+
+.centre-vertical {
+	/* Make parent div relative */
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /***************************************
 Physical Styling
@@ -24,7 +41,6 @@ Physical Styling
 .bg-container {
 	margin: 0;
 	width: 100%;
-	background: url("images/bg-zigzag.png") repeat center center;
 	position: fixed;
 	height: 100vh;
 }
@@ -34,7 +50,6 @@ Physical Styling
 	position: relative;
 	max-width: 800px;
 	z-index: 5;
-	background: #ffffff;
 }
 
 header {
@@ -45,23 +60,6 @@ header {
 	position: fixed;
 	top: 0;
 	z-index: 10;
-
-}
-
-header a {
-	color: white;
-}
-
-footer {
-	position: relative;
-	z-index: 10;
-	width: 100%;
-	height: 40px;
-	background: #ffffff;
-}
-
-.content {
-	margin-top: 100px;
 }
 
 .icon {
@@ -70,8 +68,44 @@ footer {
 	box-shadow: 0px 3px 3px $bg-grey;
 }
 
+footer {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	height: 40px;
+}
+
+.content {
+	position: absolute;
+	top: 120px;
+}
+
+.post {
+	margin-bottom: 40px;
+	padding: 15px;
+}
+
+.article-title, .date {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.date {
+	border-bottom: 1px solid $bg-grey;
+}
+
+.article-title {
+	margin-bottom: 20px;
+}
+
+.article {
+	position: relative;
+}
+
 .post-photo {
-	width: 300px;
+	float: left;
+	width: 200px;
+	margin: 0 20px 10px 0;
 }
 
 nav ul li {
@@ -79,16 +113,6 @@ nav ul li {
 	display: inline-block;
 	padding-left: 20px;
 	letter-spacing: 0.15em;
-}
-
-a:hover {
-	color: $bg-grey;
-}
-
-.centre-vertical {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 nav {
@@ -100,12 +124,54 @@ nav {
 	margin-left: 20px;
 }
 
-/* Design Styling */
+/***************************************
+Design Styling
+***************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1em;
+}
+
+.bg-container {
+	background: url("images/bg-zigzag.png") repeat center center;
+	opacity: 0.5;
+}
 
 header {
-	background: cadetblue;
+	background: $blue-theme;
 	color: white;
 	font-size: 1.2em;
 	font-weight: bold;
 	box-shadow: 0px 3px 3px $bg-grey;
 }
+
+header a {
+	color: white;
+}
+
+a:hover {
+	color: $bg-grey;
+}
+
+.post {
+	box-shadow: 3px 3px 3px $bg-grey;
+	background: #ffffff;
+	border: 1px solid lightgrey;
+}
+
+.date {
+	color: $blue-theme;
+}
+
+.article {
+	color: grey;
+}
+
+footer {
+	background: #ffffff;
+}
+
+

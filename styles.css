@@ -4,11 +4,26 @@ Variables
 /***************************************
 Resets
 ***************************************/
-body, ul, p {
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300");
+body, ul, h1, h2, h3 {
   margin: 0; }
 
 a {
   text-decoration: none; }
+
+/***************************************
+Tools
+***************************************/
+.centre-vertical {
+  /* Make parent div relative */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 /***************************************
 Physical Styling
@@ -16,7 +31,6 @@ Physical Styling
 .bg-container {
   margin: 0;
   width: 100%;
-  background: url("images/bg-zigzag.png") repeat center center;
   position: fixed;
   height: 100vh; }
 
@@ -24,8 +38,7 @@ Physical Styling
   margin: 0 auto;
   position: relative;
   max-width: 800px;
-  z-index: 5;
-  background: #ffffff; }
+  z-index: 5; }
 
 header {
   margin-left: auto;
@@ -36,40 +49,48 @@ header {
   top: 0;
   z-index: 10; }
 
-header a {
-  color: white; }
-
-footer {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  height: 40px;
-  background: #ffffff; }
-
-.content {
-  margin-top: 100px; }
-
 .icon {
   height: 70px;
   border-radius: 50%;
   box-shadow: 0px 3px 3px #424242; }
 
+footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 40px; }
+
+.content {
+  position: absolute;
+  top: 120px; }
+
+.post {
+  margin-bottom: 40px;
+  padding: 15px; }
+
+.article-title, .date {
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+.date {
+  border-bottom: 1px solid #424242; }
+
+.article-title {
+  margin-bottom: 20px; }
+
+.article {
+  position: relative; }
+
 .post-photo {
-  width: 300px; }
+  float: left;
+  width: 200px;
+  margin: 0 20px 10px 0; }
 
 nav ul li {
   text-decoration: none;
   display: inline-block;
   padding-left: 20px;
   letter-spacing: 0.15em; }
-
-a:hover {
-  color: #424242; }
-
-.centre-vertical {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
 
 nav {
   display: inline-block;
@@ -78,12 +99,42 @@ nav {
 .nav-image {
   margin-left: 20px; }
 
-/* Design Styling */
+/***************************************
+Design Styling
+***************************************/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em; }
+
+.bg-container {
+  background: url("images/bg-zigzag.png") repeat center center;
+  opacity: 0.5; }
+
 header {
   background: cadetblue;
   color: white;
   font-size: 1.2em;
   font-weight: bold;
   box-shadow: 0px 3px 3px #424242; }
+
+header a {
+  color: white; }
+
+a:hover {
+  color: #424242; }
+
+.post {
+  box-shadow: 3px 3px 3px #424242;
+  background: #ffffff;
+  border: 1px solid lightgrey; }
+
+.date {
+  color: cadetblue; }
+
+.article {
+  color: grey; }
+
+footer {
+  background: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
