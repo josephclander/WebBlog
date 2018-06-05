@@ -150,7 +150,9 @@ p > a:hover {
   color: cadetblue; }
 
 .article {
-  color: grey; }
+  color: grey;
+  overflow-wrap: break-word;
+  word-wrap: break-word; }
 
 footer {
   background: cadetblue;
@@ -167,18 +169,18 @@ Media Queries
   .post {
     max-width: 600px; } }
 /* Small width screens */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .post {
-    max-width: 300px; }
+    max-width: 260px; }
 
   .post-photo {
-    width: 300px;
+    width: 260px;
     margin: 0 0 16px 0; }
 
   header {
     height: 100vh;
     position: inherit;
-    font-size: 1.8em; }
+    font-size: 1.5em; }
 
   .bg-container {
     top: 0;
@@ -190,8 +192,8 @@ Media Queries
 
   .nav-bar {
     margin-left: 0;
-    top: 60%;
-    width: 300px;
+    top: 70%;
+    width: 260px;
     text-align: center;
     line-height: 1.8em; }
 
@@ -208,7 +210,7 @@ Media Queries
   .down-arrow {
     display: block;
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%); }
 
