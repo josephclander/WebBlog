@@ -153,4 +153,7 @@ footer {
   background: cadetblue;
   font-size: 1.4em; }
 
+footer ul {
+  padding-left: 0; }
+
 /*# sourceMappingURL=styles.css.map */
