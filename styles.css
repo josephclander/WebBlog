@@ -25,6 +25,26 @@ Tools
   clear: both;
   display: table; }
 
+/* Reveal Text */
+/* Initial styling for "..." read more */
+.more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px 10px 5px;
+  color: black;
+  font-weight: bold;
+  background: white;
+  z-index: 1;
+  text-align: right; }
+
+.more:hover {
+  cursor: pointer; }
+
+.reveal {
+  height: 250px;
+  overflow: hidden; }
+
 /***************************************
 Physical Styling
 ***************************************/
@@ -61,6 +81,7 @@ header {
   padding-top: 20px; }
 
 .post {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
