@@ -51,13 +51,34 @@
 				<article class="post reveal">
 					<div class="more"> . . .    </div>
 					<div class="date">
+						<h3>Saturday 23rd June</h3>
+					</div>
+					<div class="article-title">
+						<h3>User Agent Styles - Hidden Issues</h3>
+					</div>
+					<div class="article clearfix">
+						<img class="post-photo" src="Images/cssReset.jpg" alt="Eric Meyer's Reset Page with Chrome Dev Tools Showing User Agent Styles">
+						<p>Oh my god. How hard is it to style a button? I couldn’t believe that no CSS styling would work on the submit button on my form. Every site said that it was easy but I could only get width to make ANY difference. With further research, it appears that the user agent styles were acting strangely for me. To get any of my styles to work I had to change a border that I didn’t need to change. Why is that? Luckily I stumbled across this site <a href="https://css-tricks.com/overriding-default-button-styles/">on overriding default button styles</a>, otherwise I would have assumed that it couldn’t be done, at least not by me.</p>
+
+						<p>And release!</p>
+
+						<p>NOTE: User Agent Styles are the CSS styles that every web browser uses out of the box to style HTML. This means that if you didn’t create any CSS at all to link to your document, that it would still be legible, if still exceedingly dull and awkward.</p>
+
+						<p>While considering the topic, it reminded me that other issues I had were also due to factory settings. For example, it took me quite a while to discover why “margin: 0 auto” on  my body tag, was not centering my container div. On closer inspection the body does not automatically cover 100% of the window and I had assumed it did. It’s completely white and you can’t see it so why not? It turned out my div <em>was</em> centred in the div! So “width: 100%” on the body fixed it. Although I didn’t use the following technique for this issue, I had seen that you can add a single pixel border to objects so that you can see them and understand what they are doing until you are ready to remove them.</p>
+
+						<p>If these styles are becoming a menace and you want full control, there are CSS stylesheets out there that will reset everything to zero such as <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer's Reset Tool</a>. There are ups and downs to this. Yes, there will be fewer styles that you are trying to override as you get to build them from scratch but it also means it takes a long time. For a newbie like me, it’s worth looking at the final product to see if you’ve kept the code DRY (Don’t Repeat Yourself) as I may move things just on a visual basis and at the end realise that every paragraph tag has different padding when it truly wasn’t necessary.</p>
+					</div>
+				</article>
+				<article class="post reveal">
+					<div class="more"> . . .    </div>
+					<div class="date">
 						<h3>Friday 22nd June</h3>
 					</div>
 					<div class="article-title">
 						<h3>FreeCodeCamp projects</h3>
 					</div>
 					<div class="article clearfix">
-						<img class="post-photo" src="Images/fccProjects" alt="Free Code Camp Project User Stories">
+						<img class="post-photo" src="Images/fccProjects.jpg" alt="Free Code Camp Project User Stories">
 						<p>Really noticing the work that the guys at freecodecamp have put into their site over the last two years. I think we have to be very grateful that there are people out there willing to create these opportunities so thanks!</p>
 
 						<p>Re-opening my first challenges helped me to realise that I have gained a better working knowledge of web development and that it isn’t quite so scary anymore. Things just look more do-able.</p> 
