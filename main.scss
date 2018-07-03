@@ -41,22 +41,31 @@ Tools
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 0 10px 10px 5px;
+  padding: 10px;
   color: black;
   font-weight: bold;
   background: white;
-  z-index: 1;
+  z-index: 10;
   text-align: right;
 }
 
 .more:hover {
 	cursor: pointer;
-
 }
 
 .reveal {
   height: 250px;
   overflow: hidden;
+}
+
+.fade {
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 5;
+	background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0.5));	
 }
 
 /***************************************
