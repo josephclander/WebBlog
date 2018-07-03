@@ -36,7 +36,8 @@ Tools
   font-weight: bold;
   background: white;
   z-index: 10;
-  text-align: right; }
+  text-align: right;
+  border: none; }
 
 .more:hover {
   cursor: pointer; }
