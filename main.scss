@@ -1,9 +1,8 @@
 /***************************************
-Variables
+Imports
 ***************************************/
-
-$bg-grey: #424242;
-$blue-theme: cadetblue;
+@import 'variables';
+@import 'filter';
 
 /***************************************
 Resets
@@ -143,13 +142,6 @@ header {
 	margin: 0 20px 10px 0;
 }
 
-nav ul li {
-	text-decoration: none;
-	display: inline-block;
-	padding-left: 20px;
-	letter-spacing: 0.15em;
-}
-
 nav {
 	 display: inline-block;
 	 margin-left: 105px;
@@ -199,7 +191,7 @@ header {
 	box-shadow: 0px 3px 3px $bg-grey;
 }
 
-header a, header a:visited, .contact a, .contact a:visited {
+.contact a, .contact a:visited {
 	color: white;
 }
 

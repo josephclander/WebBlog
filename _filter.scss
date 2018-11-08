@@ -1,0 +1,23 @@
+/***************************************
+Buttons
+***************************************/
+
+.filterButtons {
+	right: 15px;
+	/*this is due to using position absolute for vertical centering*/
+
+	a {
+		color: white;
+	}
+
+	li {
+		text-decoration: none;
+		display: inline-block;
+		padding-left: 20px;
+		letter-spacing: 0.15em;
+	}
+}
+
+a.active {
+	color: $bg-grey;
+}
