@@ -11,26 +11,15 @@ $(window).ready(function(){
 		
 		$(this).addClass('active');
 		$('a.filter').not(this).removeClass('active');
-	
-		// filters keep active and remove active class from others
 
-		// select link with class active
-		// 	take inner html
-		// 	convert to lowercase
 		selection = $('.active').text().toLowerCase();
-		// console.log(selection)
-		// if "all"
+
 		if (selection === "all") {
-		// 	// display all 
-		// 	// i.e. select element "article"
-		// 	// display: initial
+
 			$("article").show();
 			// notice this is element called "article" and not class name
 		}
 
-		// if "html/css/js/reading/projects"
-			// select that class
-			// display none
 		if (selection !== "all") {
 
 			var toShow = document.getElementsByClassName(selection);
@@ -38,14 +27,14 @@ $(window).ready(function(){
 				toShow[i].setAttribute("style", "display: block");
 			}
 
-			var removeIt = "." + selection;
+			var selectionClass = "." + selection;
 			// this step added to get the class of the name selected
-			var toHide = $('article').not(removeIt);
+			var toHide = $('article').not(selectionClass);
 		
 			for (let i = 0; i < toHide.length; i++) {
 				toHide[i].setAttribute("style", "display: none");
 			}
-			// ones to remove
+			
 		}
 	})
 

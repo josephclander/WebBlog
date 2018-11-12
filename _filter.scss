@@ -8,16 +8,54 @@ Buttons
 
 	a {
 		color: white;
+		text-decoration: none;
 	}
 
 	li {
 		text-decoration: none;
 		display: inline-block;
-		padding-left: 20px;
+		margin-left: 8px;
 		letter-spacing: 0.15em;
+
+		border: white solid 1px;
+		border-radius: 4px;
+		padding: 5px;
 	}
 }
 
 a.active {
 	color: $bg-grey;
 }
+
+
+/***************************************
+Media Queries
+***************************************/
+
+
+/* Medium width screens */
+
+@media only screen and (max-width: 850px) {
+
+
+}
+
+
+/* Small width screens */
+
+@media only screen and (max-width: 450px) {
+	/*hide the filter buttons until mobile functionality is produced*/
+	ul.filterButtons {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
