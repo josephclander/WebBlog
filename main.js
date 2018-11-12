@@ -1,11 +1,35 @@
 $(window).ready(function(){
-  
+
+
+/*****************************
+Expand Articles
+*****************************/
+
 	$('.more').click(function(){
    
   		$(this).parents('.post').toggleClass('reveal');
   		$(this).siblings('.overlay').toggleClass('fade');
   	})
-	// expand articles
+	
+/*****************************
+Toggle Filter List
+*****************************/
+
+$('li.topics').click(function(){
+	var x = document.getElementById("buttons");
+
+	if (x.style.display === "inline-block") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "inline-block";
+	}
+})
+
+
+/*****************************
+Filter Topics
+*****************************/
+
 	var selection;
 	$('a.filter').click(function(){
 		

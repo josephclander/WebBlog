@@ -3,6 +3,7 @@ Buttons
 ***************************************/
 
 .filterButtons {
+
 	right: 15px;
 	/*this is due to using position absolute for vertical centering*/
 
@@ -17,14 +18,22 @@ Buttons
 		margin-left: 8px;
 		letter-spacing: 0.15em;
 
-		border: white solid 1px;
+		border: 1px solid white;
 		border-radius: 4px;
 		padding: 5px;
 	}
 }
 
+#buttons {
+	display: none;
+}
+
 a.active {
 	color: $bg-grey;
+}
+
+li.topics {
+	border: 1px solid $bg-grey;
 }
 
 
@@ -33,17 +42,24 @@ Media Queries
 ***************************************/
 
 
-/* Medium width screens */
+/* Mid to large width screens */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
 
+	#buttons {
+		width: 300px;
+	}
+
+	li {
+		margin-bottom: 4px;
+	}
 
 }
 
 
-/* Small width screens */
+/* Medium width screens */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 720px) {
 	/*hide the filter buttons until mobile functionality is produced*/
 	ul.filterButtons {
 		display: none;

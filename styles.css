@@ -19,19 +19,31 @@ Buttons
     display: inline-block;
     margin-left: 8px;
     letter-spacing: 0.15em;
-    border: white solid 1px;
+    border: 1px solid white;
     border-radius: 4px;
     padding: 5px; }
+
+#buttons {
+  display: none; }
 
 a.active {
   color: #424242; }
 
+li.topics {
+  border: 1px solid #424242; }
+
 /***************************************
 Media Queries
 ***************************************/
+/* Mid to large width screens */
+@media only screen and (max-width: 1000px) {
+  #buttons {
+    width: 300px; }
+
+  li {
+    margin-bottom: 4px; } }
 /* Medium width screens */
-/* Small width screens */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 720px) {
   /*hide the filter buttons until mobile functionality is produced*/
   ul.filterButtons {
     display: none; } }
