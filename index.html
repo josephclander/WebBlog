@@ -66,6 +66,58 @@
 						<p>A new post</p>
 					</div>
 				</article> -->
+				<article class="post reveal">
+					<div class="fade overlay"></div>
+					<button class="more"> . . .    </button>
+					<div class="date">
+						<h3>Tuesday 13th November 2018</h3>
+					</div>
+					<div class="article-title">
+						<h3>Git branch and website update</h3>
+					</div>
+					<div class="article clearfix">
+						<img class="post-photo" src="Images/filter.jpg" alt="snapshot of the newly added article topic filter">
+						<p>Having completed a large section of the JavaScript	challenges on Free Code Camp, I decided it was time to start putting some into practice. As the amount of articles has grown on my site, I figured that it could do with a filter for the different topics. I could add another page but I felt that would really only be a copy and paste job of the first page so wouldn’t really be that challenging.</p>
+
+						<p>As I had implemented jQuery to be able to minimize articles to a uniform size, I would be able to use this alongside vanilla JavaScript as well. I broke the problem down into stages. What would I need to see on the screen and what would be the logical steps for that to happen? </p>
+
+						<p>This also gave me an opportunity to practice using Git branch. I set up one called “siteFilter” and set about updating the site in sections making sure I had a complete running code before each commit.</p>
+
+						<p>Here are my commits with brief explanations. They have all since been merged into the master branch:</p>
+
+						<p><strong>1. Basic links for filtering added and styled by adding additional scss partials</strong></p>
+
+						<p>I decided what the categories would be. I already had some links set up so I utilized them for the time being and would go back to improve the design once the functionality was up and running. </p>
+
+						<p><strong>2. js for active link completed</strong></p>
+
+						<p>Now whichever link you click on will pick up the “.active” styling and it will be removed from all the others</p>
+
+						<p><strong>3. Basic use of filter javascript has been enabled for desktop - if fewer than 2 articles, footer not against the bottom of the page</strong></p>
+
+						<p>My site will now filter the articles but has created an issue with the footer</p>
+
+						<p><strong>4. links made to buttons and removed for mobile screens</strong></p>
+
+						<p>I updated the design and made sure it was not an issue for mobile screens. This is something I can try to include at a later stage.</p>
+
+						<p><strong>5. reveal button for filter tags added, styled, mediaqueries adjusted</strong></p>
+
+						<p>As the buttons took up space horizontally in the header, it looked untidy if it was not in use. I created a button to toggle between revealing these.</p>
+
+						<p><strong>6. footer changed to fixed for all but mobile screens - this is to fix the issue with dynamic content from tags effecting placement</strong></p>
+
+						<p>I’m sad to say that I was experimenting with different setups for the footer but was unable to find a way to create a sticky footer. One that would stick to the bottom if the content was not long enough to fit the height of the window. As my site would dynamically update, I couldn’t see a way to get it to work with plain CSS. At this stage I did not want to venture into long js code to measure the height of articles and windows and also realized that in fact, maybe the links in my footer would also be better if you could access them more readily.</p>
+
+						<p><strong>Issues:</strong> </p>
+
+						<p>Accessing the elements I needed.
+						Most of my time was spent trying to see how to access my elements in the fashion that I had set them up. My “a” links were inside list tags and this caused issue with precedence overriding my rules.</p>
+
+						<p>jQuery toggle() for a links.
+							As links are display as list-item this ruined my design. This meant I had to experiment to find how to access the tags and then change style of each in my array.</p>
+					</div>
+				</article>
 				<article class="post reveal js">
 					<div class="fade overlay"></div>
 					<button class="more"> . . .    </button>
