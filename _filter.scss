@@ -36,7 +36,9 @@ li.topics {
 	border: 1px solid $bg-grey;
 }
 
-
+.filterWrapMobile {
+	display: none;
+}
 /***************************************
 Media Queries
 ***************************************/
@@ -65,9 +67,61 @@ Media Queries
 		display: none;
 	}
 
+	
+
+
 }
 
+@media only screen and (max-width: 400px) {
 
+	.filterWrapMobile {
+		margin-top: 20px;
+		display: block;
+		background-color: $blue-theme;
+		width: 100%;
+		text-align: center;
+		height: 100%;
+
+			ul {
+				padding: 10px 0 0 0;
+				list-style: none;
+
+				li {
+					margin: 10px 5px;
+					color: white;
+					font-weight: bolder;
+					background-color: $blue-theme-dark;
+					display: block;
+					letter-spacing: 0.15em;
+					border: 1px solid white;
+					border-radius: 4px;
+					padding: 15px;
+				}
+			}
+
+			a {
+				color: white;
+				text-decoration: none;
+			}
+
+
+	}
+
+	#buttons {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+
+	a.active {
+		color: $bg-grey;
+		font-weight: bold;
+	}
+
+
+}
 
 
 
