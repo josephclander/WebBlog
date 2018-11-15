@@ -5,8 +5,8 @@ $(window).ready(function(){
 Expand Articles
 *****************************/
 
-	$('.more').click(function(){
-   
+	$('.more').click(function(event){
+   		event.preventDefault();
   		$(this).parents('.post').toggleClass('reveal');
   		$(this).siblings('.overlay').toggleClass('fade');
   	})
@@ -15,7 +15,10 @@ Expand Articles
 Toggle Filter List
 *****************************/
 
-$('li.topics').click(function(){
+$('li.topics').click(function(event){
+
+	event.preventDefault();
+	
 	var x = document.getElementById("buttons");
 
 	if (x.style.display === "inline-block") {
