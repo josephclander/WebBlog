@@ -34,8 +34,11 @@ Filter Topics
 *****************************/
 
 	var selection;
-	$('a.filter').click(function(){
+	$('a.filter').click(function(event){
 		
+		event.preventDefault();
+
+
 		$(this).addClass('active');
 		$('a.filter').not(this).removeClass('active');
 
