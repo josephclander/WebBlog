@@ -1,19 +1,23 @@
 /***************************************
 Imports
 ***************************************/
-@import 'variables';
-@import 'filter';
+@import "variables";
+@import "filter";
 
 /***************************************
 Resets
 ***************************************/
 
-body, ul, h1, h2, h3 {
-	margin: 0;
+body,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 /***************************************
@@ -21,16 +25,16 @@ Tools
 ***************************************/
 
 .desktop-centre-vertical {
-	/* Make parent div relative */
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+  /* Make parent div relative */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Reveal Text */
@@ -50,7 +54,7 @@ Tools
 }
 
 .more:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .reveal {
@@ -59,13 +63,17 @@ Tools
 }
 
 .fade {
-	height: 80px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 5;
-	background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));	
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 /***************************************
@@ -73,291 +81,301 @@ Physical Styling
 ***************************************/
 
 .bg-container {
-	margin: 0;
-	width: 100%;
-	position: fixed;
-	height: 100vh;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  height: 100vh;
 }
 
 main {
-	height: 100%;
-	margin: 0 auto;
-	position: relative;
-	z-index: 5;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
 header {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 100px;
-	position: fixed;
-	top: 0;
-	z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .down-arrow {
-	display: none;
+  display: none;
 }
 
 .icon {
-	height: 70px;
-	border-radius: 50%;	
-	box-shadow: 0px 3px 3px $bg-grey;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 3px $bg-grey;
 }
 
 .content {
-	margin-top: 100px;
-	margin-bottom: 60px;
-	padding-top: 20px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+
+.api-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: $blue-theme-light;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  box-shadow: 0px 3px 3px $bg-grey;
+}
+
+.api-info__logo,
+.api-info__results-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.api-info__logo {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  & .fa-github {
+    font-size: 1.17em;
+    margin-right: 0.5rem;
+  }
+}
+
+.api-info__logo:hover {
+  color: $blue-theme-darker;
+  border-bottom: 2px solid $blue-theme-darker;
+}
+
+.api-info__results-box {
+  & span {
+    color: $blue-theme-darker;
+  }
+}
+.api-info__repositories {
+  margin-right: 1.5rem;
 }
 
 .post {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
-	padding: 15px;
-	max-width: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding: 15px;
+  max-width: 800px;
 }
 
-.article-title, .date {
-	padding-top: 2px;
-	padding-bottom: 2px;
+.article-title,
+.date {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .date {
-	border-bottom: 1px solid $bg-grey;
+  border-bottom: 1px solid $bg-grey;
 }
 
 .article-title {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .article {
-	position: relative;
+  position: relative;
 }
 
 .post-photo {
-	float: left;
-	width: 200px;
-	margin: 0 20px 10px 0;
+  float: left;
+  width: 200px;
+  margin: 0 20px 10px 0;
 }
 
 nav {
-	 display: inline-block;
-	 margin-left: 105px;
+  display: inline-block;
+  margin-left: 105px;
 }
 
 .nav-image {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
-	z-index: 10;
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
 }
 
 .contact ul li {
-	display: inline-block;
-	padding-left: 25px;
+  display: inline-block;
+  padding-left: 25px;
 }
-
-
 
 /***************************************
 Design Styling
 ***************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300");
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
 }
 
 .bg-container {
-	background: url("images/bg-zigzag.png") repeat center center;
-	opacity: 0.5;
+  background: url("images/bg-zigzag.png") repeat center center;
+  opacity: 0.5;
 }
 
 header {
-	background: $blue-theme;
-	color: white;
-	font-size: 1.2em;
-	font-weight: bold;
-	box-shadow: 0px 3px 3px $bg-grey;
+  background: $blue-theme;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0px 3px 3px $bg-grey;
 }
 
-.contact a, .contact a:visited {
-	color: white;
+.contact a,
+.contact a:visited {
+  color: white;
 }
 
-p>a, p>a:visited {
-	color: $bg-grey;
-	font-weight: bold;
+p > a,
+p > a:visited {
+  color: $bg-grey;
+  font-weight: bold;
 }
 
-header a:hover, .contact a:hover {
-	color: $bg-grey;
+header a:hover,
+.contact a:hover {
+  color: $bg-grey;
 }
 
-p>a:hover {
-	background: pink;
+p > a:hover {
+  background: pink;
 }
 
 .post {
-	box-shadow: 3px 3px 3px $bg-grey;
-	background: #ffffff;
-	border: 1px solid lightgrey;
+  box-shadow: 3px 3px 3px $bg-grey;
+  background: #ffffff;
+  border: 1px solid lightgrey;
 }
 
 .date {
-	color: $blue-theme;
+  color: $blue-theme;
 }
 
 .article {
-	color: grey;
-	overflow-wrap: break-word;
-  	word-wrap: break-word;
+  color: grey;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 footer {
-	background: $blue-theme;
-	font-size: 1.4em;
+  background: $blue-theme;
+  font-size: 1.4em;
 }
 
 footer ul {
-	padding-left: 0;
+  padding-left: 0;
 }
-
 
 /***************************************
 Media Queries
 ***************************************/
 
-
 /* Medium width screens */
 
 @media only screen and (max-width: 850px) {
-
-	.post {
-		max-width: 600px;
-	}
+  .post {
+    max-width: 600px;
+  }
 }
-
 
 /* Small width screens */
 
 @media only screen and (max-width: 400px) {
-	.post {
-		width: 100%;
-		box-sizing: border-box;
-		border: none;
-		border-top: 1px solid lightgrey;
-		line-height: 1.6em;
-	}
+  .post {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-top: 1px solid lightgrey;
+    line-height: 1.6em;
+  }
 
-	.post-photo {
-		width: 100%;
-		margin: 0 0 16px 0;
-	}
+  .post-photo {
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
 
-	header {
-		height: 100vh;
-		position: inherit;
-		font-size: 1.5em;
-	}
+  header {
+    height: 100vh;
+    position: inherit;
+    font-size: 1.5em;
+  }
 
-	.bg-container {
-		top: 0;
-		z-index: -1;
-	}
+  .bg-container {
+    top: 0;
+    z-index: -1;
+  }
 
-	.mobile {
-		left: 50%;
-		transform: translate(-50%,-50%);
-	}
+  .mobile {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-	.nav-bar {
-		margin-left: 0;
-		top: 70%;
-		width: 260px;
-		text-align: center;
-		line-height: 1.8em;
-	}
+  .nav-bar {
+    margin-left: 0;
+    top: 70%;
+    width: 260px;
+    text-align: center;
+    line-height: 1.8em;
+  }
 
-	.nav-image {
-		margin-left: 0;
-		top: 30%;
-	}
+  .nav-image {
+    margin-left: 0;
+    top: 30%;
+  }
 
-	.icon {
-		height: 200px;
-	}
+  .icon {
+    height: 200px;
+  }
 
-	.name {
-		border-bottom: 1px solid $bg-grey;
-	}
+  .name {
+    border-bottom: 1px solid $bg-grey;
+  }
 
-	.down-arrow {
-		display: block;
-		position: absolute;
-		bottom: 15px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
+  .down-arrow {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-	.content {
-		margin-top: 0;
-	}
+  .content {
+    margin-top: 0;
+  }
 
-	footer {
-		position: relative;
-		height: 60px;
-		line-height: 60px;
-		font-size: 2.4em;
-	}
+  footer {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    font-size: 2.4em;
+  }
 
-	body {
-		font-size: 0.9em;
-	}
-
+  body {
+    font-size: 0.9em;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
