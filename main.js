@@ -14,7 +14,6 @@ Github results box API
 	fetch("https://api.github.com/repos/josephclander/webBlog/commits?per_page=100")
     .then(response => response.json())
     .then(myJson => {
-	  console.log(myJson.length);
 		let commits = document.querySelector('#js-commits');
 		commits.innerHTML = myJson.length;
     });
