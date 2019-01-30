@@ -1,101 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="Description"
-      content="This blog is written by a beginning coder, Joseph C Lander. If you are learning to code too and would like to follow as I track my journey through my coding experience, please visit my blog. I will highlight the coding resources that I use and the problems that I face when trying to learn from them. Initially, I am working on HTML, CSS, and JavaScript to be able to build websites and learn to become a Full-stack developer. This website will allow me to practice my coding skills and to update it as I learn new practices. If you are considering becoming a web developer or are already learning, follow my blog to see where I struggle, what tips I pick up and the issues facing someone starting to learn to code."
-    />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-83201270-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="This blog is written by a beginning coder, Joseph C Lander. If you are learning to code too and would like to follow as I track my journey through my coding experience, please visit my blog. I will highlight the coding resources that I use and the problems that I face when trying to learn from them. Initially, I am working on HTML, CSS, and JavaScript to be able to build websites and learn to become a Full-stack developer. This website will allow me to practice my coding skills and to update it as I learn new practices. If you are considering becoming a web developer or are already learning, follow my blog to see where I struggle, what tips I pick up and the issues facing someone starting to learn to code." />
 
-      gtag("config", "UA-83201270-2");
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83201270-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <title>Blog: Learning to Code - Joseph C Lander</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="nav-image desktop-centre-vertical mobile">
-        <img class="icon" src="images/headshot_sml.jpg" alt="Self Image" />
-      </div>
+    gtag("config", "UA-83201270-2");
+  </script>
 
-      <nav class="nav-bar desktop-centre-vertical mobile">
-        <div class="name">Joseph C Lander</div>
-        <div class="title">Learning to Code</div>
-      </nav>
-      <ul class="filterButtons desktop-centre-vertical">
-        <li class="topics"><a href="#">Topics</a></li>
-        <div id="buttons">
-          <li><a class="filter active" href="#">All</a></li>
-          <li><a class="filter" href="#">HTML</a></li>
-          <li><a class="filter" href="#">CSS</a></li>
-          <li><a class="filter" href="#">JS</a></li>
-          <li><a class="filter" href="#">Reading</a></li>
-          <li><a class="filter" href="#">Projects</a></li>
-        </div>
-      </ul>
+  <title>Blog: Learning to Code - Joseph C Lander</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous" />
+</head>
 
-      <!-- for mobile -->
-      <div class="down-arrow"><i class="fas fa-arrow-alt-circle-down"></i></div>
-    </header>
-
-    <div class="filterWrapMobile">
-      <ul>
-        <li>Topic Filter</li>
-        <div id="buttons">
-          <li><a class="filter active" href="#">All</a></li>
-          <li><a class="filter" href="#">HTML</a></li>
-          <li><a class="filter" href="#">CSS</a></li>
-          <li><a class="filter" href="#">JS</a></li>
-          <li><a class="filter" href="#">Reading</a></li>
-          <li><a class="filter" href="#">Projects</a></li>
-        </div>
-      </ul>
+<body>
+  <header>
+    <div class="nav-image desktop-centre-vertical mobile">
+      <img class="icon" src="images/headshot_sml.jpg" alt="Self Image" />
     </div>
 
-    <div class="bg-container"></div>
-    <main>
-      <div class="content">
-        <div class="api-info">
-          <a
-            class="api-info__logo"
-            href="https://github.com/josephclander"
-            target="_blank"
-          >
-            <i class="fab fa-github "></i>
-            <h3 class="api-info__title">GitHub Info</h3>
-          </a>
+    <nav class="nav-bar desktop-centre-vertical mobile">
+      <div class="name">Joseph C Lander</div>
+      <div class="title">Learning to Code</div>
+    </nav>
+    <ul class="filterButtons desktop-centre-vertical">
+      <li class="topics"><a href="#">Topics</a></li>
+      <div id="buttons">
+        <li><a class="filter active" href="#">All</a></li>
+        <li><a class="filter" href="#">HTML</a></li>
+        <li><a class="filter" href="#">CSS</a></li>
+        <li><a class="filter" href="#">JS</a></li>
+        <li><a class="filter" href="#">Reading</a></li>
+        <li><a class="filter" href="#">Projects</a></li>
+      </div>
+    </ul>
 
-          <div class="api-info__results-box">
-            <h4 class="api-info__repositories">
-              Total repositories: <span id="js-repositories">__</span>
-            </h4>
-            <h4 class="api-info__commits">
-              Commits to Site: <span id="js-commits">__</span>
-            </h4>
-          </div>
+    <!-- for mobile -->
+    <div class="down-arrow"><i class="fas fa-arrow-alt-circle-down"></i></div>
+  </header>
+
+  <div class="filterWrapMobile">
+    <ul>
+      <li>Topic Filter</li>
+      <div id="buttons">
+        <li><a class="filter active" href="#">All</a></li>
+        <li><a class="filter" href="#">HTML</a></li>
+        <li><a class="filter" href="#">CSS</a></li>
+        <li><a class="filter" href="#">JS</a></li>
+        <li><a class="filter" href="#">Reading</a></li>
+        <li><a class="filter" href="#">Projects</a></li>
+      </div>
+    </ul>
+  </div>
+
+  <div class="bg-container"></div>
+  <main>
+    <div class="content">
+      <div class="api-info">
+        <a class="api-info__logo" href="https://github.com/josephclander" target="_blank">
+          <i class="fab fa-github "></i>
+          <h3 class="api-info__title">GitHub Info</h3>
+        </a>
+
+        <div class="api-info__results-box">
+          <h4 class="api-info__repositories">
+            Total repositories: <span id="js-repositories">__</span>
+          </h4>
+          <h4 class="api-info__commits">
+            Commits to Site: <span id="js-commits">__</span>
+          </h4>
         </div>
+      </div>
 
-        <!-- <article class="post reveal">
+      <!-- <article class="post reveal">
           <div class="fade overlay"></div>
           <button class="more">. . .</button>
           <div class="date"><h3>#</h3></div>
@@ -106,1710 +94,1761 @@
           </div>
         </article> -->
 
-        <article class="post reveal reading">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Thursday 17th January 2019</h3></div>
-          <div class="article-title"><h3>Chat-App Tutorial on Scrimba</h3></div>
-          <div class="article clearfix">
-            <img class="post-photo" src="Images/scrimbaLesson.jpg" alt="Image of Scrimba Course - build a chat app" />
-            <p>So the chat app tutorial I started yesterday, turned into a series of lectures that you just watched predominantly. To consolidate this, now
-            having watched them, I will need to find time to go back over them and try to input the code without the tutorial. I
-            had expected more times to stop and attempt code yourself but it was still a worthwhile experience. That said, going
-            back over the whole thing right away feels tedious and more practicing muscle memory than application. I should leave
-            some time and come back so that it feels like a new challenge. In the meantime, I need to consider what project I can
+      <article class="post reveal">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Wednesday 30th January 2019</h3>
+        </div>
+        <div class="article-title">
+          <h3>Building CV Creator App with React</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/cvcreator.jpg" alt="Image of website with cvcreator" />
+          <p>What to build? Always a tough question. It’s hard to make something that you can’t see a point to and it’s
+            too large a
+            challenge to find something big or with features on too steep a learning curve. After some time I have
+            decided that I
+            wanted to make something that would also be useful to me. I started to draw mockups for a website that
+            would allow you
+            to enter information about yourself quickly to produce a fully styled CV. This way I practice React and why
+            not enter
+            my own data to show how the app works.</p>
+
+          <p>I took the first while considering what would be possible at my level and what would be a sensible way to
+            structure it.
+            Having completed the first part of the official React tutorial, I wanted to use their single page app
+            creator with npm
+            so that I could concentrate as much as possible on the structure rather than getting stuck with compiling
+            issues. You
+            can see the final product at my <a href="https://josephclander.github.io/cvCreator/">Github profile page</a>.</p>
+
+          <h5>
+            Designing for print and pdfs
+          </h5>
+
+          <p>I had to research how to create a site that will print correctly. I used <a href="https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/">Smashing
+              Magazine’s article</a> to get started. This really made it apparent that print media has
+            been moved away from the lime light in recent years. I was surprised to see that there was no concrete idea
+            of how to
+            implement <code>@print</code> in ANY of the browsers, not one. I put a solid couple of hours research into
+            this and came to the
+            conclusion that I would be safest styling for a responsive webpage and had to take the decision to ignore
+            the mobile
+            browsers. Remember, I was not looking to add too many extra hurdles to the project, I wanted to practice
+            using React.
+            If you checkout my design on mobile it is horrible. I half considered putting in a page for mobile that
+            cheekily said
+            “If you’re looking to write a CV for a job on your mobile, then you’re not really interested enough to get
+            the job.” I
+            shied away from this.</p>
+
+          <h5>
+            The structure
+          </h5>
+
+          <p>I spent a day fleshing out the HTML (I should say JSX) and CSS for the site. By the end of that effort I
+            had managed to
+            visually see what I wanted. We had a landing page that didn’t change much from what you see now. In fact, I
+            spent so
+            long finding a free photo with the search criteria “CV” or “resume”. I’ve learned that photographers aren’t
+            foolish and
+            visuals of something that can very obviously be monetized by the user aren’t given away for nothing.
+            Thousands of free
+            photos of computers but only one that was close enough to my criteria. My preview page was not really
+            visually pleasing
+            at this stage but I had managed to incorporate all the input fields I thought I would need. I scanned
+            Pinterest for a
+            few minimally styled CVs as a reference. Once the structure was there I began to think more in depth about
+            what
+            features I could add to this site that would showcase the benefits of using React to build a site.</p>
+
+          <h5>
+            Features Considered:
+          </h5>
+          
+          <ul>
+            <li>word/character count for profile and experience sections</li>
+            <li>photo from an api of LinkedIn</li>
+            <li>box for adding extra skills (max 2 more)</li>
+            <li>checkboxes changing the colour scheme</li>
+          </ul>
+
+          <h3>
+            Main Learning Points:
+          </h3>
+
+          <p>With the exception of the photo API, I managed to include all of these features in some capacity. I
+            experimented with a
+            few ways to make it work in each case. I go into more detail on this in the readme file on the <a href="https://github.com/josephclander/cvCreator">Github
+              repo</a>.</p>
+
+          <p>Compiling a production ready app and being able to deploy it to Github pages proved to be another part of
+            the learning
+            curve. I am competent using the command line but at this stage, I don’t always trust myself the first time
+            I go to use
+            a new command, especially when it has the potential to lose all the work you have done. However, after
+            reading both
+            Github and Facebooks documentation alongside a couple of youtube videos we were up and running.</p>
+        </div>
+      </article>
+
+      <article class="post reveal reading">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Thursday 17th January 2019</h3>
+        </div>
+        <div class="article-title">
+          <h3>Chat-App Tutorial on Scrimba</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/scrimbaLesson.jpg" alt="Image of Scrimba Course - build a chat app" />
+          <p>So the chat app tutorial I started yesterday, turned into a series of lectures that you just watched
+            predominantly. To consolidate this, now
+            having watched them, I will need to find time to go back over them and try to input the code without the
+            tutorial. I
+            had expected more times to stop and attempt code yourself but it was still a worthwhile experience. That
+            said, going
+            back over the whole thing right away feels tedious and more practicing muscle memory than application. I
+            should leave
+            some time and come back so that it feels like a new challenge. In the meantime, I need to consider what
+            project I can
             work on to put some React into practice.</p>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="post reveal javascript">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Wednesday 16th January 2019</h3></div>
-          <div class="article-title"><h3>Learning React</h3></div>
-          <div class="article clearfix">
-            <img class="post-photo" src="Images/react.jpg" alt="React Logo" />
-            <p>Having been to the Flatiron Code school fair, I was feeling pretty pleased with my working knowledge of HTML, CSS and
-            javascript but it was becoming apparent that if I didn’t start learning and working with a large framework then I
-            wouldn’t be as useful to a company working a large website. Having researched a lot of the schools’ curriculums and
-            found useful <a href="https://medium.com/level-up-web/developer-roadmaps-all-in-one-place-75c0402db0e0">route maps to learning web design</a>, React looked like the best thing for me to get started with.</p>
-            
-            <p>Seeing as the framework is based on JavaScript, I already had a good working knowledge of how to get started. I did go
-            over some of the ES6 features again in more depth just to try and help make the next steps easier. These were Classes
-            and the 
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">de-structuring assignment</a>. Looking around
-            for good places to learn the material, I searched YouTube but nothing took me. I went back to freecodecamp and
-            completed their section on frontend frameworks. This was a good starting point but I needed more practice. Then I found
-            these people who created a platform called, Scrimba <a href="https://scrimba.com/g/glearnreact">scrimba.com/g/glearnreact</a>. Their site is great as they have
-            made it possible to interact with a live tutorial and play around with the code. They start slowly but go back over
-            things to give you a chance to create code from scratch, then run through the solution. They also included links to the
-            official <a href="https://reactjs.org/tutorial/tutorial.html">React</a> site. I decided to run through the first part of their
+      <article class="post reveal javascript">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Wednesday 16th January 2019</h3>
+        </div>
+        <div class="article-title">
+          <h3>Learning React</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/react.jpg" alt="React Logo" />
+          <p>Having been to the Flatiron Code school fair, I was feeling pretty pleased with my working knowledge of
+            HTML, CSS and
+            javascript but it was becoming apparent that if I didn’t start learning and working with a large framework
+            then I
+            wouldn’t be as useful to a company working a large website. Having researched a lot of the schools’
+            curriculums and
+            found useful <a href="https://medium.com/level-up-web/developer-roadmaps-all-in-one-place-75c0402db0e0">route
+              maps to learning web design</a>, React looked like the best thing for me to get started with.</p>
+
+          <p>Seeing as the framework is based on JavaScript, I already had a good working knowledge of how to get
+            started. I did go
+            over some of the ES6 features again in more depth just to try and help make the next steps easier. These
+            were Classes
+            and the
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">de-structuring
+              assignment</a>. Looking around
+            for good places to learn the material, I searched YouTube but nothing took me. I went back to freecodecamp
+            and
+            completed their section on frontend frameworks. This was a good starting point but I needed more practice.
+            Then I found
+            these people who created a platform called, Scrimba <a href="https://scrimba.com/g/glearnreact">scrimba.com/g/glearnreact</a>.
+            Their site is great as they have
+            made it possible to interact with a live tutorial and play around with the code. They start slowly but go
+            back over
+            things to give you a chance to create code from scratch, then run through the solution. They also included
+            links to the
+            official <a href="https://reactjs.org/tutorial/tutorial.html">React</a> site. I decided to run through the
+            first part of their
             tutorial which helps you set up a compiler with npm.</p>
-            
-            <p>Anyway, I recommend the course and feel I’ve come away with a strong idea of how to build a site with React. As a
-            junior developer, I could imagine working with a team to maintain something like this. For now I still feel I need more
-            practice building more components and apps to get a stronghold of all the ways it is useful. I didn't have to look far. I liked the Scrimba
+
+          <p>Anyway, I recommend the course and feel I’ve come away with a strong idea of how to build a site with
+            React. As a
+            junior developer, I could imagine working with a team to maintain something like this. For now I still feel
+            I need more
+            practice building more components and apps to get a stronghold of all the ways it is useful. I didn't have
+            to look far. I liked the Scrimba
             style so much that I immediately started going with another course they had to build a <a href="https://scrimba.com/p/pbNpTv/cm2a6f9">chat-room</a>.</p>
-            
-            <p>
-              I have only just started on this but I can already feel I’m gaining muscle memory of the structure of the code.
-            </p>
-          </div>
-        </article>
-
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Tuesday 15th January 2019</h3></div>
-          <div class="article-title"><h3>Git Issues Resolved</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/gitError.jpg"
-              alt="image of my error using git on github site"
-            />
-            <p>
-              So before the holiday I updated some aspects of my html page and
-              made commits locally. I also felt the need to update the readme
-              file. I did so directly on the github website and thought nothing
-              of it. Coming back after the holiday to make further commits and
-              upload posts I wrote, git tells me that I cannot push my local
-              commits to github as it has files that I don't have. Ah!
-            </p>
-            <p>
-              I have made adjustments before and trialled new ideas on other
-              branches but this is yet to cause a merge conflict as I did not
-              make further changes on the master branch. Not only is this
-              different but it is not on seperate branches. I tried git fetch
-              then discovered I needed to use git pull to get the information
-              for the commit from the remote repository. I backed up the two
-              changes I made locally to my desktop in case this pull / merge
-              would overwrite all my work today.
-            </p>
-            <p>
-              Crisis averted. It turns out that git is smart enough to place the
-              commit I made remotely into the correct stream and I didn't have
-              to do any extra work. This is one of those occasions you should
-              note in life where the best result did occur.
-            </p>
-          </div>
-        </article>
-
-        <article class="post reveal reading">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Wednesday 12th December 2018</h3></div>
-          <div class="article-title">
-            <h3>Began to learn about databases and SQL</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/databases.jpg"
-              alt="image of a database drawing"
-            />
-            <p>
-              My website is beginning to fill up with articles and I am
-              wondering how to I could store the data elsewhere and then have
-              the website fetch it. My first look at this has opened up quite a
-              big rabbit hole as I realize I need to learn a whole new language
-              to be able to work with a database. I have waited a little while
-              before getting started but have now set aside some time to work on
-              it.
-            </p>
-
-            <p>
-              So looking around it seems that there are two main ways to use a
-              database; relational and non-relational. Looking at this with
-              paths to follow, I see the main routes on code schools is to use
-              either SQL (relational) or MongoDB (non-relational). As I have had
-              a lot of experience with spreadsheets and a little with Microsoft
-              Access, I chose SQL and MySQL as a starting point.
-            </p>
-
-            <p>
-              The tutorial I followed was by Mike Dane on behalf of
-              Freecodecamp:
-              <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY"
-                >database tutorial</a
-              >.
-            </p>
-
-            <h3>Main Learning Points:</h3>
-
-            <h5>Issues to look out for</h5>
-
-            <p>
-              It was over 4 hours long but it helped me to set up a database
-              server on my laptop and gain experience with the commands and
-              interface. After some practice, it doesn’t seem too difficult to
-              set up and manipulate a straight forward set of data. The
-              difficulty only seems to come when that tables you are using cross
-              over and the amount of tables increases. As you have to set up a
-              step at a time, you have to be certain that if you add or delete
-              some data, it doesn’t invalidate another tables references. Making
-              sure this is done in the correct order looks like the main area
-              where you could go wrong. Well, alongside accidentally deleting
-              all of your data without specifying filters.
-            </p>
-
-            <p>
-              As I completed the tutorial, I wanted to start adding this to my
-              price comparison app
-              <a href="https://github.com/josephclander/priceComparison"
-                >github.com/josephclander/priceComparison</a
-              >. However, before diving in I wanted to see how you got the
-              website to communicate with the database and realized I would have
-              to learn either PHP or NodeJS. I probably wouldn’t have to learn
-              too much but after a few days of working out another language, I
-              needed some space before taking on another one! It’s disappointing
-              that I couldn’t start running with it straight away but I have at
-              least gained experience that will help in the future.
-            </p>
-
-            <h5>PHP or NodeJS?</h5>
-
-            <p>
-              Since finding out I need one of these two languages to speak to a
-              database, I have been researching and asking people I know about
-              which route is best and have had a mixed response. Now PHP is
-              older and not being improved on and from that perspective looks
-              like the language to avoid. However, a lot of Wordpress websites
-              have been created with it and there is still a strong share of the
-              market created with Wordpress. On the other hand, JavaScript is
-              one of the most used languages and NodeJS is very current and used
-              in more modern applications. For future proofing myself, NodeJS
-              seems to be the sensible way to go.
-            </p>
-          </div>
-        </article>
-
-        <article class="post reveal reading">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Monday 10th December 2018</h3></div>
-          <div class="article-title">
-            <h3>
-              3 Meet-ups: API with Codesmith, Change Career with Skillshare and
-              Flatiron graduates fair
-            </h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/meetup.jpg"
-              alt="meetup website logo"
-            />
-            <h3>::: API Code Smith Meetup :::</h3>
-
-            <p>
-              So another element at progressing my career change will be to
-              become involved in the community and to see how others are
-              managing to become developers. I signed myself up for 3 meetups in
-              and around New York. The first one was with Code Smith, a coding
-              school that were offering a few evenings running through some of
-              the more complex areas of javascript. This particular one was on
-              creating a voice recognition app using APIs.
-            </p>
-
-            <p>
-              Being my first in New York, I was a little apprehensive as to what
-              kind of mix this meetup would have. How experienced are the people
-              going to be? It turned out that it was well over subscribed and
-              really had too many people in one room to make it effective
-              (around 45 showed in a room for 30 and I say this as a teacher of
-              13 years). Unfortunately, with so many people and such a long
-              build up in the Code Smith sales pitch, we didn’t even start the
-              project until after 9pm when the meetup was scheduled to finish.
-              No bother, it’s free but few people give something for nothing so
-              I just put it down to experience.
-            </p>
-
-            <h3>Main Learning Points:</h3>
-
-            <h5>Networking:</h5>
-            <p>
-              So my first experience was not great for meeting people in the
-              same place as me and learning their journeys. The first few people
-              I met were perhaps further along and didn’t see me as a useful
-              stepping stone in their progression. I could take some more
-              personal reflection and conclude that maybe I’m not that
-              interesting to talk to but if someone says abruptly, “it’s all
-              about networking” and then immediately turns their back on you to
-              talk to someone else, you didn’t stand a chance. Although I had
-              little time left, I managed to move on and strike up conversation
-              with others that was more meaningful. This is real life and not
-              everyone has time to become your friend so be helpful and things
-              will come naturally.
-            </p>
-            <br />
-
-            <h3>::: Career Change Meetup at Skillshare NY :::</h3>
-
-            <p>
-              The second of my first meetups was to be less technical and
-              focused more on the skillsets required to change career. People
-              were definitely more chatty at this event but on closer
-              inspection, those chatting turned out to be friends that knew each
-              other already. I was a bit surprised to see that people weren’t
-              getting to know each other like I thought they would at these
-              events. I said hello and asked how two people were, already sat
-              down on a row of chairs but one word responses and stares back at
-              their note pads told me it wasn’t worth forcing it.
-            </p>
-
-            <p>
-              The format was a panel of 5 people who had recently changed career
-              being asked questions by a host, with room for questions at the
-              end. Some good comments came out of it and although some of the
-              professions had aspects that wouldn’t really apply to me, there
-              were soft skills that would be useful to consider. I particularly
-              liked the input of someone that was transitioning from sales to UX
-              design within their company. They had some good points about
-              finding time to study in your new field that I liked.
-            </p>
-
-            <h3>Main Learning Points:</h3>
-
-            <h5>Find the skills required</h5>
-
-            <p>
-              When considering what you need to learn, check out job websites
-              and see what people are being asked for. See what is most in
-              demand and secondly what would be preferred skills. This tactic
-              helps you target the correct topics when deciding what you should
-              be studying.
-            </p>
-            <br />
-
-            <h3>::: Flat Iron Graduates Fair :::</h3>
-
-            <p>
-              The students at the fair were two weeks away from graduation and
-              had spent the last two weeks working on their final projects. All
-              bunched close together in a small room, were around 20 people
-              standing beside their laptops/monitors with a mini whiteboard
-              showcasing what technologies they had used. It was a great
-              opportunity to speak to the students personally about their
-              experience. My main questions were; how have you found your time
-              on the course, how does the teaching/learning take place, what
-              were your main struggles in building your project and how
-              confident are you of gaining employment now.
-            </p>
-
-            <p>
-              Having scanned the room I chose to speak with 4 people closely.
-              Each one was very proud of what they had built and was able to
-              articulate all the technologies they had used. They were all
-              impressive. The learning structure appears to be quite intensive
-              and moves at a fast pace. Students alluded to having a good
-              working knowledge of HTML, CSS and vanilla js but were quickly
-              expected to get a grip of frameworks and use them. There’s an
-              argument both ways for the pace at which they are taught at but
-              it’s clear that on a bootcamp you learn fundamentals mainly before
-              starting the course, quickly practice them in the initial weeks
-              before diving head first into more complex material. They were
-              shown key technologies then work on projects to practice, they
-              were expected to learn outside of the class regularly and use peer
-              learning. They had a meeting with a personal tutor once a week
-              although I am sure they could ask for help slightly more
-              frequently than that if necessary.
-            </p>
-
-            <h5>Main Learning Points:</h5>
-
-            <p>
-              I love the idea of having experts in the field help to guide you
-              through a curriculum so that you don’t feel you waste time.
-              However, the main benefits pushed by the students were motivation
-              and working with peers. I feel there is a chance that they will
-              have missed that this came about by the way in which they were
-              taught so that knew the right amount to explore themselves but I
-              can only go by what is said. For this reason I’m struggling to
-              evaluate the worth. My degree in the UK at a Russel Group
-              university to study Mathematics BSc came to £12k and my teacher
-              training, also at a top university, cost around £2.5k after their
-              bursary, giving a total of £14.5k for 4 years of some of the best
-              education the UK has to offer. Most coding bootcamps last around 3
-              months, are not regulated and cost $17k ($13.5k approx). To
-              compare that’s roughly the same cost for 6% of the time. Can you
-              exactly compare each route like this, maybe not but it still food
-              for thought.
-            </p>
-          </div>
-        </article>
-
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Wednesday 5th December 2018</h3></div>
-          <div class="article-title">
-            <h3>Web-app: Price Comparison Calculator</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/priceComparison.jpg"
-              alt="web-app on github"
-            />
-            <p>
-              I felt that I had completed enough tutorials and read enough
-              recently that I needed to break away and build something again.
-              researching how people put their study into practice showed me
-              that I would be most interested if I could find something that
-              would solve a problem of interest to me. Having moved to New York
-              City and spent a few months trying to acclimatize to the area, I
-              had most struggled with how expensive everywhere was, especially
-              groceries. A dull subject to find where the cheapest places to
-              shop are, but all the more reason to find a way to collate
-              information and to get all the answers easily. A standard
-              spreadsheet can record the information and be sorted but it won’t
-              spit out what you need with the other information removed. I found
-              a task.
-            </p>
-
-            <p>
-              Again this project and it’s progress can be tracked on GitHub
-              here: xxxx. I took time to consider how to collate the data. Array
-              or Object? Both have their strengths but having seen how most
-              databases work, I chose to go with each data point being stored as
-              an object. At the point of writing, I have now created a product
-              that will use the list of objects holding data about the store,
-              product, price and size and will calculate a comparison of price
-              per unit to inform of what products to purchase in which shops to
-              an html page.
-              <a href="https://github.com/josephclander/priceComparison"
-                >github.com/josephclander/priceComparison</a
-              >
-            </p>
-
-            <h3>Main Learning Points</h3>
-
-            <h5>Storing data:</h5>
-
-            <p>
-              Having decided to go with objects rather than storing values in
-              arrays meant that I didn’t have access to all of the same methods
-              that I had used with arrays and this meant I had to think of ways
-              round sorting and comparing values. Obviously as my data has to be
-              entered manually onto the js file, it doesn’t have the best user
-              experience and led me to start research into using databases which
-              I’ll discuss in a later post.
-            </p>
-          </div>
-        </article>
-
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Sunday 25th November 2018</h3></div>
-          <div class="article-title">
-            <h3>
-              Initiated second version of website using CSS grid and flexbox
-            </h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/website2.jpg"
-              alt="image of new website on desktop"
-            />
-            <p>
-              My blog is beginning to fill up now and it has definitely met its
-              purpose of holding all of my progress for all to see. I have come
-              along a little more now and I could benefit from a little more
-              practice in the structure and artistic edge of creating a site
-              from scratch. I wanted to make something that was visually a
-              little more pleasing but made use of the newer CSS layout
-              technologies of grid and flexbox.
-            </p>
-
-            <h3>Main Learning Points</h3>
-
-            <h5>Grid, Flexbox or both?</h5>
-            <p>
-              Through my practice and research, it seems that CSS grid is great
-              for setting up your main layout and for making your site
-              responsive with media queries with much more readable elements.
-              For individual modules in the grid cells, using flexbox and
-              container divs gives you more flexibility. It felt good getting to
-              grips with these as you could leave behind the issues created with
-              floats. Previously having to “clear” empty divs to help the flow
-              of a document, these methods move past that and create a much more
-              purpose built approach to laying out your page.
-            </p>
-
-            <h5>UX features - header on scroll</h5>
-            <p>
-              Having tried to look at my original site and adapt features, I
-              fell into the trap of designing elements that later needed to be
-              changed as I came up with new ideas. One example of this was the
-              header. Originally placed into the grid templates, the header
-              needed to be removed when I wanted to add a header that would only
-              come down once you’d passed the landing page.
-            </p>
-
-            <p>
-              Unlike other site’s pages I had seen where the header would go up
-              or down depending on the direction of scroll, I wanted it to come
-              down once the main landing page had been passed. The landing page
-              already had hyperlinks so there was no need for repetition and it
-              crowded the design that users would see. This took a while to
-              learn to create myself and helped me to see what information you
-              can gain about a page with js. Ultimately, I needed to create a
-              reference point for the section where I wanted the header to
-              emerge and then see if the scroll point from the top of the page
-              had surpassed this. I realized that you couldn’t just write emerge
-              after this distance as this would change depending on screen
-              configuration of the user.
-            </p>
-          </div>
-        </article>
-
-        <article class="post reveal reading">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Monday 19th November 2018</h3></div>
-          <div class="article-title"><h3>Started CS50</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/cs50.jpg"
-              alt="Photo of CS50 lecture"
-            />
-            <p>
-              So starting this course seemed to be the smart thing to do. I have
-              been working through a lot of JavaScript challenges and had
-              successfully completed them. However, these challenges touched on
-              finding the most efficient ways of completing tasks and this led
-              me to be curious about exploring a more theoretical course to
-              help.
-            </p>
-
-            <p>
-              The first challenge used Scratch, which is a kind of “plug and
-              play” type of programming where you can move building blocks on
-              the screen to complete your tasks. This was all well and good and
-              I did it for the sake of completeness. Then the course and
-              lectures moved into what I had imagined it would cover,
-              algorithms. Having used JavaScript for so long, it was interesting
-              as they were using the programming language “C”. There are hours
-              of videos on the site and I worked my way through all of them.
-              Very interesting and helped me to feel that I was getting a
-              stronger grounding in CS theory. Starting some of the first real
-              challenges though, I began to feel that I had been putting in
-              around 5-6 hours of reading into their problems and not always
-              grasping how the lectures had supported them. I have paused my
-              work in this as currently I am unsure as to what their question is
-              asking. I am gaining good insight into what a bitmap image is and
-              how it is broken down but this is not where I wish to be spending
-              my time. This is not to say that it isn’t informative and great to
-              gain a more rounded view of issues adjacent to programming, but
-              two days of reading with nothing to show requires a pivot.
-            </p>
-
-            <h3>Main Learning Points</h3>
-
-            <h5>Algorithms:</h5>
-            <p>
-              So I have spent a long time studying the sorting algorithms and
-              have managed to write the simpler ones in javascript unaided.
-              Recursion algorithms have been looked over and studied but it
-              would take me a bit before I could build one on my own. Having
-              looked them up, I will go back to them at a later date and attempt
-              myself now that I have the idea behind how they are constructed.
-            </p>
-
-            <h5>Other programming languages:</h5>
-            <p>
-              I now appreciate how javascript parsing on the fly differs from C
-              compiling and the strengths and weaknesses of that. It also drew
-              attention to how many functions and methods modern languages now
-              have built in. This has been interesting as the rigor required to
-              complete a task drew parallels to the study I completed during my
-              Mathematics degree.
-            </p>
-          </div>
-        </article>
-
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Tuesday 13th November 2018</h3></div>
-          <div class="article-title">
-            <h3>Git branch and website update</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/filter.jpg"
-              alt="snapshot of the newly added article topic filter"
-            />
-            <p>
-              Having completed a large section of the JavaScript challenges on
-              Free Code Camp, I decided it was time to start putting some into
-              practice. As the amount of articles has grown on my site, I
-              figured that it could do with a filter for the different topics. I
-              could add another page but I felt that would really only be a copy
-              and paste job of the first page so wouldn’t really be that
-              challenging.
-            </p>
-
-            <p>
-              As I had implemented jQuery to be able to minimize articles to a
-              uniform size, I would be able to use this alongside vanilla
-              JavaScript as well. I broke the problem down into stages. What
-              would I need to see on the screen and what would be the logical
-              steps for that to happen?
-            </p>
-
-            <p>
-              This also gave me an opportunity to practice using Git branch. I
-              set up one called “siteFilter” and set about updating the site in
-              sections making sure I had a complete running code before each
-              commit.
-            </p>
-
-            <p>
-              Here are my commits with brief explanations. They have all since
-              been merged into the master branch:
-            </p>
-
-            <p>
-              <strong
-                >1. Basic links for filtering added and styled by adding
-                additional scss partials</strong
-              >
-            </p>
-
-            <p>
-              I decided what the categories would be. I already had some links
-              set up so I utilized them for the time being and would go back to
-              improve the design once the functionality was up and running.
-            </p>
-
-            <p><strong>2. js for active link completed</strong></p>
-
-            <p>
-              Now whichever link you click on will pick up the “.active” styling
-              and it will be removed from all the others
-            </p>
-
-            <p>
-              <strong
-                >3. Basic use of filter javascript has been enabled for desktop
-                - if fewer than 2 articles, footer not against the bottom of the
-                page</strong
-              >
-            </p>
-
-            <p>
-              My site will now filter the articles but has created an issue with
-              the footer
-            </p>
-
-            <p>
-              <strong
-                >4. links made to buttons and removed for mobile screens</strong
-              >
-            </p>
-
-            <p>
-              I updated the design and made sure it was not an issue for mobile
-              screens. This is something I can try to include at a later stage.
-            </p>
-
-            <p>
-              <strong
-                >5. reveal button for filter tags added, styled, mediaqueries
-                adjusted</strong
-              >
-            </p>
-
-            <p>
-              As the buttons took up space horizontally in the header, it looked
-              untidy if it was not in use. I created a button to toggle between
-              revealing these.
-            </p>
-
-            <p>
-              <strong
-                >6. footer changed to fixed for all but mobile screens - this is
-                to fix the issue with dynamic content from tags effecting
-                placement</strong
-              >
-            </p>
-
-            <p>
-              I’m sad to say that I was experimenting with different setups for
-              the footer but was unable to find a way to create a sticky footer.
-              One that would stick to the bottom if the content was not long
-              enough to fit the height of the window. As my site would
-              dynamically update, I couldn’t see a way to get it to work with
-              plain CSS. At this stage I did not want to venture into long js
-              code to measure the height of articles and windows and also
-              realized that in fact, maybe the links in my footer would also be
-              better if you could access them more readily.
-            </p>
-
-            <p><strong>Issues:</strong></p>
-
-            <p>
-              Accessing the elements I needed. Most of my time was spent trying
-              to see how to access my elements in the fashion that I had set
-              them up. My “a” links were inside list tags and this caused issue
-              with precedence overriding my rules.
-            </p>
-
-            <p>
-              jQuery toggle() for a links. As links are display as list-item
-              this ruined my design. This meant I had to experiment to find how
-              to access the tags and then change style of each in my array.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal js">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Wednesday 7th November 2018</h3></div>
-          <div class="article-title">
-            <h3>Completed - FCC Javascript Algorithms and Data Structures</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/fcc_jscert.jpg"
-              alt="Screen Shot of certificate from free code camp"
-            />
-            <p>
-              It’s done. It’s done. I made it. I have now completed and passed
-              tests for the 5 projects that award certification for FCC
-              Javascript Algorithms and Data Structures. Some of the tasks were
-              easier than others. However, I have always made a point of
-              completing a task, passing the tests, and then researching to see
-              how others completed it. This has helped tremendously through the
-              earlier tasks FCC set and enabled me to have a better
-              understanding of what makes better code. Some of your code may
-              pass but is unnecessarily long, solved by brute force, has other
-              bugs or is just not as elegant and readable as it could be.
-            </p>
-
-            <p>
-              The tasks have been great (albeit frustrating at times) at
-              highlighting areas that you still need to work on. It hasn’t been
-              huge structural issues necessarily but highlighting that I may
-              still only have a surface understanding of some of the finer
-              points. For example, I passed almost all of the tests on the last
-              challenge and only had to go back and adapt to fit a particular
-              edge use case. This turned into 90% of my workload. The first
-              thing I overlooked was initializing a variable as a constant, then
-              latter wishing to change it to fit my edge case, and not
-              immediately thinking this was something to look at. So var, let,
-              const need to be part of my thought process in error checking.
-              Finer parts of regex slowed me down too and I feel this is
-              something that I will find myself needing to check references for
-              whenever completing a tricky project. Some of the tasks made me
-              consider the number of calculations the code may take and begin to
-              research more on the big O. I was writing off for and while loops
-              as more tasks were pushing to use higher order functions like
-              .map, .filter and .reduce but found in some instances like the
-              palindrome checker that they could lead to more efficient code,
-              reducing calculations.
-            </p>
-
-            <p>
-              Well now I am done there are decisions to be made. I have a paid
-              front end course to complete on
-              <a href="https://teamtreehouse.com/">teamtreehouse.com/</a> but
-              also want to get back up to speed with other front end libraries
-              they taught (and I haven’t touched for a while) such as Sass and
-              jQuery which are available in the next FCC course. Also there’s a
-              lot more reading to be done on algorithms I feel. It would be good
-              to keep this going at a steady increment so that I can take it all
-              in.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal reading">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Friday 2nd November 2018</h3></div>
-          <div class="article-title">
-            <h3>Reading - Data Structures and Algorithms with JavaScript</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/data.jpg"
-              alt="Text book front cover"
-            />
-            <p>
-              So I am now through the FCC Intermediate Challenges unharmed and
-              more informed than when I started. Before diving headlong into the
-              final projects I thought it was time to do some more advanced
-              reading, especially since having completed lots of practical
-              challenges, I would have more chance of understanding the theory
-              in context.
-            </p>
-
-            <p>
-              I was looking at the FCC reading list for javascript and came
-              across the book “Data Structures and Algorithms with JavaScript”
-              by Michael McMillan. Now that I have a lot of practice under my
-              belt and am pretty familiar with the syntax of programming in
-              javascript, I thought this book would be good to show me best
-              practices. It would be an opportunity to write smarter, cleaner
-              code. The initial chapter seemed fairly straight forward, then we
-              moved from my very familiar use of arrays to linked lists.
-            </p>
-
-            <p>
-              Having climbed a mountain, no lets say having climbed a steep
-              hill, getting through the challenges and being close to receiving
-              a certificate from FCC in javascript, starting to look at the data
-              structures confused me. I suddenly felt that I was at the bottom
-              of another steep hill, feeling as if I hadn’t even started
-              climbing yet. The problem I’m currently having, isn’t that the
-              setup of these data structures is too taxing, but that I can’t yet
-              see why you would use them. Every challenge set so far has not
-              required any other set up other than use of an array or reference
-              to an object. Why would it be preferable to effectively build my
-              own data system and methods and functions, when there are already
-              ones available? Without this context currently, it feels as if we
-              are trying to reinvent the wheel.
-            </p>
-
-            <p>
-              Trying to read around the subject to make myself feel better, I
-              belong to the mailing list of “Learn to code with me” and received
-              a much lighter version to get me started
-              <a href="https://learntocodewith.me/posts/data-structures/"
-                >learntocodewith.me/posts/data-structures/</a
-              >.
-            </p>
-
-            <p>
-              This work will be ongoing and I hope to learn uses and
-              applications as well as the how.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal js">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Wednesday 17th October 2018</h3></div>
-          <div class="article-title">
-            <h3>FCC: Entering the Intermediate js Coding Challenges</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/fccStartIntChal.jpg"
-              alt="fcc list of challenges"
-            />
-            <p>
-              I am pausing here. Just for a moment. I have now worked through
-              the lessons on Object and Function orientated programming and am
-              standing before the intermediate challenges. After I complete
-              these challenges, I can see the projects in the background to
-              complete the certification. It will be a lot of work and am
-              slightly nervous as to how I will cope with what I expect will be
-              longer, more intricate issues.
-            </p>
-
-            <p>
-              This course has now reinforced the ideas behind non-destructive
-              functions that I covered in the Flatiron School’s bootcamp program
-              and I feel better for it. Hopefully I am ready for these. See you
-              in a while…
-            </p>
-          </div>
-        </article>
-        <article class="post reveal js">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Monday 15th October 2018</h3></div>
-          <div class="article-title">
-            <h3>Completing FCC Basic js Challenges</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/js_Basic_challenges.jpg"
-              alt="page with coding challenges"
-            />
-            <p>
-              OK as setting up in the states is taking longer than expected and
-              on top of that, the challenges of writing in javascript are
-              getting tougher, my posts are getting further and further apart.
-              However, today I hit another milestone as I finally completed all
-              16 of the
-              <a
-                href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting"
-                >freecodecamp basic js challenges</a
-              >. I have had some challenges from other sites but not this many
-              in a row.
-            </p>
-
-            <p>
-              Again by taking these challenges on, I am more and more beginning
-              to be able to tackle challenges in a systematic, progressive way.
-              I am finding that the more time I spend at the start considering
-              what the logical steps should be, the easier writing the code is.
-              With experience I am more aware of what methods are available and
-              so put them to use more quickly.
-            </p>
-
-            <p>
-              It is interesting to see that there are many ways to solve
-              problems and often with a little more thought, you’ll find there
-              is an annoyingly simple approach. Yes, you’ll find you still need
-              to use loops a lot of the time but the brute force methods of
-              trying every value, in every single problem, can cause confusion
-              and adds extra levels of complexity. When completing challenges
-              and then perusing other answers, I sometimes feel there is not
-              enough clarity over what it is that makes an answer more advanced.
-              There have been some challenges that create a one line function,
-              chaining 5 or more obscure methods at once. I don’t feel the fact
-              that it is on one line makes it advanced if it is not very
-              readable. However, there have been some advanced answers that take
-              different logical approaches and find the solution quickly and
-              elegantly. There are some approaches that open your eyes to
-              further possibilities. One in particular that I saw, changed the
-              problem into a new one that would bear the same result. This can
-              enable you to get around issues with types of variables or methods
-              that you can use.
-            </p>
-
-            <p>
-              Here are the tasks I completed:
-              <a href="https://codepen.io/collection/XzwPqO/"
-                >https://codepen.io/collection/XzwPqO/</a
-              >
-            </p>
-
-            <p>
-              I have tried to add comments as I progressed to show what my
-              thought process was at this time in my learning. On later projects
-              I also added neater, more elegant solutions I found to the tasks.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal js">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Sunday 2nd September 2018</h3></div>
-          <div class="article-title">
-            <h3>FCC: Record Collection, js Task (Revision)</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/RecordJS.jpg"
-              alt="List of accomplished tasks"
-            />
-            <p>
-              So now that the first certificate is through from
-              <a href="https://learn.freecodecamp.org/">freecodecamp</a>, that
-              means I should start working through the javascript tasks. Two
-              years ago I did start these in their previous setup so it feels
-              like a jump start to know that I have completed most of the basic
-              tests section. I thought it worth challenging myself to try some
-              of the tasks again though to make sure this material had stuck.
-            </p>
-
-            <p>
-              While I had a rough idea of what to do, I needed to look a few
-              things up and was not using the correct syntax. That aside, the
-              lessons I have had so far have taught me how to approach a problem
-              far better than I was initially. First of all, I made new linked
-              html and js files so that I would be able to test my work as I
-              progressed. This made the work so much easier to handle. Before I
-              would attempt to set the whole thing up in one go, then struggle
-              to see where it went wrong when it (inevitably) didn’t work first
-              time. I also attempted to break tasks down into smaller tasks
-              where possible. I started with a simple situation that worked for
-              the most straight forward request a user would have. I made sure
-              it worked and for my benefit on these challenges, commented what I
-              was doing in short statements. This enabled me to get the tasks
-              into 3 key sections and test with ease.
-            </p>
-
-            <p>
-              By having fewer new elements each time and each code chunk being
-              broken into as close to a single task as possible, I was able to
-              test and move through this work in around an hour. Two years ago I
-              am sure it annoyed me, left me wondering what on earth was going
-              wrong and it’s a great relief that this time round I feel that I
-              have made progress in my problem solving skills as well as my
-              knowledge of the programming language.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal html">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Thursday 10th August 2018</h3></div>
-          <div class="article-title">
-            <h3>
-              Back Learning in NYC and Earned FCC Responsive Web Design
-              Certificate
-            </h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/fccCert.jpg"
-              alt="FreeCodeCamp Responsive Web Design Certificate"
-            />
-            <p>
-              1 month on and we are finally set in New York City. I forget how
-              long it takes to set up bank accounts and all, especially when you
-              don’t exist on any financial records in the country. This has
-              slowed down the process of learning some what but over the last
-              two days, I have got back into gear and revisited my last project
-              for
-              <a href="https://learn.freecodecamp.org/"
-                >learn.freecodecamp.org</a
-              >. It’s hard to run over something again cold and move quickly. I
-              had to read my HTML a couple of times and read up on CSS Grids
-              several times before I began. As it turns out, I was very pleased
-              that I had left my work in a good position before I stopped
-              working on it. Essentially, I had completed all of the HTML to
-              pass the tests set out by FCC (minus the css media query) so
-              coming back to it now, I knew that I would mainly work on CSS with
-              just a few tweaks to the code.
-            </p>
-
-            <p>
-              I spent a lot of time going over tutorials again to try and add
-              CSS Grids to this project as I hadn’t used it in the others.
-              Unfortunately, there wasn’t too much to the site and so I don’t
-              feel that I’ve pushed myself to learn much about it at this
-              attempt. Especially as it needed a fixed sidebar. Being position
-              fixed meant that it is taken out of the regular flow anyway so I
-              basically made a two column grid with nothing in the first one.
-              You can see why I’m underwhelmed. Equally though, I didn’t see a
-              point in making the site unnecessarily complicated.
-            </p>
-
-            <p>
-              All that said, I have completed the final project of 5 on the
-              Responsive Web Design course and earned my certificate. You can
-              see it here:
-              <a
-                href="https://www.freecodecamp.org/certification/josephclander/responsive-web-design"
-                >www.freecodecamp.org/certification/josephclander/responsive-web-design</a
-              >. While I had two gaps in this course, it has helped me to see
-              how far I have come from the first lessons learning markup, to
-              being able to look at a blank page and create a site. I feel I
-              still need to practice a lot and continue to consolidate my
-              knowledge but this is a big milestone.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Tuesday 10th July 2018</h3></div>
-          <div class="article-title"><h3>Building Another Website</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/philiy.jpg"
-              alt="philiy.com website"
-            />
-            <p>
-              Shortly, my wife and I will be moving over to New York City for
-              her work. Soon to head up the American branch of the company she
-              works for, we have been discussing a way for her to showcase all
-              the things she is doing. Although she is mentioned for her work on
-              her company website, YouTube, Linked-in and Twitter, there isn’t
-              one area that holds all the things she has done together. Knowing
-              she was interested in building a website, I quickly got onto
-              finding her chosen domain name for the best price with best
-              renewal rate. I’ve been lured into great introductory prices
-              before, then been upset to find the renewal price is more than 3
-              times the initial price annually. Even if you are not sure the
-              website will last, you don’t want to cripple your options.
-            </p>
-
-            <p>
-              There is going to be a lot to discuss and I’m sure my ability
-              might not match up to my wife’s expectations so there is going to
-              be a learning curve. There is also the matter of maintaining the
-              site. I am so far away from being able to create a CMS system,
-              that I will be required to update it manually myself.
-            </p>
-
-            <p>
-              To hold the site I’ve done the initial admin set up work; name
-              bought and linked to my web hosting space, Google tracker added
-              and the holding page is created and a new Git repository set up,
-              knowing to get my gitignore file in order this time!
-            </p>
-
-            <p>
-              You can find the site at
-              <a href="http://philiy.com/">philiy.com</a>.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal reading">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Tuesday 3rd July 2018</h3></div>
-          <div class="article-title">
-            <h3>Udacity - Free Lessons on Using Git</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/Udacity.jpeg"
-              alt="Udacity Logo"
-            />
-            <p>
-              So I was trailing through my bookmarks that I had saved a couple
-              of years ago when I started to get interested in coding. Back then
-              I was scavenging the internet for any free materials available and
-              just saving them en masse. I thought I should go back over these
-              and have a clear out. I looked through a few but some of the
-              bigger names are dishing out some good materials that go further
-              than your usual “Hello world!” startups. I scanned through what
-              was available for free on
-              <a
-                href="https://eu.udacity.com/course/how-to-use-git-and-github--ud775"
-                >Udacity’s website</a
-              >
-              (there are fully paid up courses too) and saw some lessons on
-              using Git. Now I have followed a few courses on YouTube and other
-              sources that got me up and started, using this very blog in fact,
-              but this has proven to be a more in depth, highly detailed course
-              to get you practiced and is going well so far.
-            </p>
-            <p>
-              UPDATE: I have noted that there are quite a few courses on their
-              site for Git. My link takes you to the version that I used.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Tuesday 3rd July 2018</h3></div>
-          <div class="article-title">
-            <h3>Adding Keyboard Accessibility</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/tabkey.jpg"
-              alt="Photo of the tab key on a keyboard"
-            />
-            <p>
-              As I continue to see more and more articles on improving
-              accessibility I realise that it is not until you start to test
-              your site that you see truly how it feels to navigate with certain
-              restrictions. And how annoying it gets when it just doesn't work!
-            </p>
-            <p>
-              Playing with the new faded overlay I added to the bottom of the
-              articles for asthetic purposes, I decided to just use the tab key
-              to navigate the page. Starting from the url, the tab key sent me
-              down the page to the first instance where I have an anchor. Most
-              of the articles are missed and because I added a hidden section
-              that's only revealed on clicking a div element, you can't even
-              open them to read.
-            </p>
-            <p>
-              Doing some research, I found that if I stick to the rules of
-              semantic HTML and make my div element a button element, then the
-              tab key will focus on it and simply using enter will expand the
-              selection. I did have to add the style "border: none" to break the
-              user styles again but this feels much better now.
-            </p>
-            <p>
-              This doesn't mean the problem is completely solved for keyboard
-              access. Now as you navigate the page, for any articles that you
-              don't open, you will still navigate those links unnecessarily and
-              shift the text in the article down so you can't read the headline.
-              However, an immediate fix isn't required as the tab goes to the
-              expand button first before the links so it's most likely you
-              didn't want to read it in the first place.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal reading">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Monday 2nd July 2018</h3></div>
-          <div class="article-title">
-            <h3>Book Review: UX for Beginners by Joel Marsh</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/uxdesign.jpg"
-              alt="UX for Beginners book cover of a rubber duck"
-            />
-            <p>
-              There were many interesting things that came out of the book for
-              me. I already appreciated that UX was not a means of making a
-              beautiful design but the book had pushed to show that a great deal
-              of thought on psychology goes into the way a UX designer creates a
-              website. A lot of the approaches that caught my attention were
-              looking at how to not just make the sites accessible and intuitive
-              to the user but to make them “feel” like they were making the
-              correct choices. As a web designer, I am to look at what the
-              site’s goals are and what the user’s goals are. I need to make it
-              such that when the user gets their goal, so does the website and
-              it does need to be in that order.
-            </p>
-
-            <p>
-              It was interesting to read about the methods used to grab a user’s
-              attention; gamification, colour schemes, lining up buttons along
-              the “axes of interaction” (or not) and use of dummy prices to give
-              the look of value to name but a few. It made you look at some of
-              your most used sites in a new light as you can now critique them
-              on how they attempt to keep your attention. It also highlighted to
-              you how certain sites are trying to trick you. Hunting to find
-              buttons that have negative actions for the site or the use of
-              click-bait become even more obvious. The book doesn’t focus on
-              exposing the sneaky sites, it gives a good exposure to
-              accessibility features and how your design could be improved to
-              help all too.
-            </p>
-
-            <p>
-              When trying to design, I have now learned that aiming to solve
-              problems that you see in front of you is a better approach than
-              simply brain storming good ideas. This was quite a standout point
-              for me as you do imagine designers just sitting around trying to
-              come up with cool ideas. The approach means that as you discover
-              what the problems or limitations are, you will be able to make
-              sure all are taken note of and that fewer problems are created if
-              at all. This resonated with me from the use of Linear Programming
-              in Mathematics. This looks to form equations of all the issues and
-              graph them. You then look for the areas of the graph that area
-              valid and select the ones that give you the best result from that
-              list.
-            </p>
-
-            <p>
-              The methods used to test your site for effectiveness also have a
-              very mathematical feel to them. I have spent a long time in my
-              profession being told about how the data makes the point the
-              tester wants it too, when in reality it hasn’t been tested fairly.
-              The use of surveys appears almost pointless without leading the
-              users except for a few circumstances where minimal, factual
-              information is required. A/B testing appeals to my science
-              background as they try to use large samples and change only one
-              element. This is what makes a test fair. It also hit home about
-              how people’s memories do not always tell the truth. This applies
-              to both the user and the tester. Use of film to see user’s
-              reactions alongside facts such as the ones you can use with
-              Google’s tools will give a much more accurate picture of what is
-              going on. Again, these must be used as factually as possible and
-              not interpreted.
-            </p>
-
-            <p>
-              There were many more points made in this book worth reading. I
-              have only scratched the surface.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal css">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Saturday 23rd June 2018</h3></div>
-          <div class="article-title">
-            <h3>User Agent Styles - Hidden Issues</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/cssReset.jpg"
-              alt="Eric Meyer's Reset Page with Chrome Dev Tools Showing User Agent Styles"
-            />
-            <p>
-              Oh my god. How hard is it to style a button? I couldn’t believe
-              that no CSS styling would work on the submit button on my form.
-              Every site said that it was easy but I could only get width to
-              make ANY difference. With further research, it appears that the
-              user agent styles were acting strangely for me. To get any of my
-              styles to work I had to change a border that I didn’t need to
-              change. Why is that? Luckily I stumbled across this site
-              <a href="https://css-tricks.com/overriding-default-button-styles/"
-                >on overriding default button styles</a
-              >, otherwise I would have assumed that it couldn’t be done, at
-              least not by me.
-            </p>
-
-            <p>And release!</p>
-
-            <p>
-              NOTE: User Agent Styles are the CSS styles that every web browser
-              uses out of the box to style HTML. This means that if you didn’t
-              create any CSS at all to link to your document, that it would
-              still be legible, if still exceedingly dull and awkward.
-            </p>
-
-            <p>
-              While considering the topic, it reminded me that other issues I
-              had were also due to factory settings. For example, it took me
-              quite a while to discover why “margin: 0 auto” on my body tag, was
-              not centering my container div. On closer inspection the body does
-              not automatically cover 100% of the window and I had assumed it
-              did. It’s completely white and you can’t see it so why not? It
-              turned out my div <em>was</em> centred in the div! So “width:
-              100%” on the body fixed it. Although I didn’t use the following
-              technique for this issue, I had seen that you can add a single
-              pixel border to objects so that you can see them and understand
-              what they are doing until you are ready to remove them.
-            </p>
-
-            <p>
-              If these styles are becoming a menace and you want full control,
-              there are CSS stylesheets out there that will reset everything to
-              zero such as
-              <a href="https://meyerweb.com/eric/tools/css/reset/"
-                >Eric Meyer's Reset Tool</a
-              >. There are ups and downs to this. Yes, there will be fewer
-              styles that you are trying to override as you get to build them
-              from scratch but it also means it takes a long time. For a newbie
-              like me, it’s worth looking at the final product to see if you’ve
-              kept the code DRY (Don’t Repeat Yourself) as I may move things
-              just on a visual basis and at the end realise that every paragraph
-              tag has different padding when it truly wasn’t necessary.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Friday 22nd June 2018</h3></div>
-          <div class="article-title"><h3>FreeCodeCamp projects</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/fccProjects.jpg"
-              alt="Free Code Camp Project User Stories"
-            />
-            <p>
-              Really noticing the work that the guys at freecodecamp have put
-              into their site over the last two years. I think we have to be
-              very grateful that there are people out there willing to create
-              these opportunities so thanks!
-            </p>
-
-            <p>
-              Re-opening my first challenges helped me to realise that I have
-              gained a better working knowledge of web development and that it
-              isn’t quite so scary anymore. Things just look more do-able.
-            </p>
-
-            <p>
-              I’m looking forward to putting more of what I’ve learned into
-              practice and starting from a blank screen again. If I feel I have
-              time it maybe worth refactoring my code for the first challenges.
-              I understand this is a more realistic daily life of a developer
-              and fixing bad ideas. So I better get on to fixing my bad ones.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal reading">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Thursday 21st June 2018</h3></div>
-          <div class="article-title"><h3>Learning about Accessibility</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/access.jpg"
-              alt="Curriculum from Free Code Camp"
-            />
-            <p>
-              Reading the
-              <a href="learn.freecodecamp.org">FreeCodeCamp</a> curriculum made
-              me realise the importance of accessibility and that I will have to
-              consider it in my markup more closely. I was aware from previous
-              classes that you needed to consider this but it showed that
-              running over previously visited material is beneficial. For
-              example, I knew that I should add alt tags to images to help those
-              with screen readers but what I didn’t realise is that if I used
-              anything as a decoration and gave it an alt tag such as “long
-              black line”, I would just be littering the screen with nonsense as
-              far as a screen reader was concerned.
-            </p>
-
-            <p>
-              I also thought little of seeing the semantic tags for main and nav
-              introduced. Now I’m more aware that this helps tell the story of
-              where elements are and their function. Not to mention my use of
-              ‘h’ tags! So I now understand that I shouldn’t have more than one
-              h1 tag as it wouldn’t really make sense to have more than one main
-              headline/title would it?
-            </p>
-
-            <p>
-              All this had made me think that beauty isn’t skin deep and I am
-              going to need to try and make sure my markup looks good on the
-              inside as well.
-            </p>
-
-            <p>
-              There are a few that I hadn’t heard of though and it made me
-              wonder how much they were used. The ‘time’ tag is definitely a new
-              one to me. I decided to look this up a bit and found an article on
-              the ever useful site of
-              <a href="https://css-tricks.com/time-element/">CSS Tricks</a>.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Thursday 21st June 2018</h3></div>
-          <div class="article-title"><h3>Completing online courses</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/fcc.jpg"
-              alt="Free Code Camp Site"
-            />
-            <p>
-              So this week has been busy and difficult to get through as many
-              lessons as I would have liked to. However, I completed the few
-              remaining lessons on
-              <a href="https://flatironschool.com/">flatironschool.com</a> and
-              it inspired me to look up more videos on the use of jQuery. It has
-              led me to try out collapsible sections in my articles that work a
-              little better than with the target selector. For future reference
-              I placed my work in
-              <a href="https://codepen.io/tidyjoe/pen/YvxaqK">Codepen</a> so
-              that I can remind myself or use it as a component for future work.
-              I have spelled out the issues I had in implementing it and where I
-              could take it further there.
-            </p>
-
-            <p>
-              I have now placed it onto my site in the updated form and am
-              reasonably happy with it. Feeling like I’m writing a school
-              science report, I would say that, if I were to try this again I
-              would like to find a way to blur the text at the bottom of the
-              page as it appears as if it has been cut off. I wasn’t able to
-              successfully do this with an inset box-shadow because I have a
-              background colour (I think) which makes me think that I would need
-              to add a div that also transitions on selection.
-            </p>
-
-            <p>
-              It feels bitter sweet to have finished all the labs on javaScript.
-              While I liked the difficulty of the challenges, I mostly spent my
-              time trying to figure out if issues occurred in my code because of
-              a written error or a misunderstanding of the way the test had to
-              be submitted, which wasn’t always consistent. This could double
-              the amount of time spent on a challenge and obviously add greatly
-              to self doubt. I imagine if I were working in a team, these would
-              be issues that you would quickly communicate and solve.
-            </p>
-
-            <p>
-              I’m not ready to move onto the Ruby part of the induction and want
-              to play with frontend a little more. I am going to head back to
-              <a href="learn.freecodecamp.org">FreeCodeCamp</a> that I first
-              completed some lessons for over two years ago. It looks like the
-              site has been updated and looks pretty swish and it has a
-              structured certification too.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Wednesday 13th June 2018</h3></div>
-          <div class="article-title">
-            <h3>Experiment with ":target" selector</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/codepen_reveal.jpg"
-              alt="Photo of codepen public post"
-            />
-            <p>
-              So I started to consider the fact that my posts are getting longer
-              here as the content is becoming more complex. I am concerned that
-              it will become boring to look back on but for the moment I'll just
-              settle for a way to hide some of the content until I'm ready to
-              read it.
-            </p>
-            <p>
-              Rather than try it out on the site directly, I have been
-              experimenting in
-              <a href="https://codepen.io/tidyjoe/pen/bKRLop">Codepen</a> to see
-              what the effect would be. You can check it out but I see that my
-              next module on the Flatiron Bootcamp is all on jQuery. The little
-              experience I've had of this tells me that a far smoother and more
-              elegant solution is just around the corner.
-            </p>
-            <p>
-              I am starting to create these more often and try to document them
-              so that I can refer back to them later.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal js">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Tuesday 12th June 2018</h3></div>
-          <div class="article-title">
-            <h3>Changing how I consider success</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/JavaScriptLearn.jpg"
-              alt="Flatiron Online Bootcamp Photo"
-            />
-            <p>
-              During this week I managed to complete another module of the
-              JavaScript section of the
-              <a href="https://learn.co/tracks/bootcamp-prep"
-                >Flatiron School Bootcamp Prep</a
-              >. Whilst a lot of the material is straight forward with a few
-              examples, there are parts of JavaScript that took me a while to
-              comprehend. Namely, "callbacks".
-            </p>
-            <p>
-              After reading the material on the website, there were links for
-              further resources and I found myself falling down a wormhole, as
-              one article led to a little more understanding, followed by
-              further mystery. As it turned out, the coding challenges didn't
-              require callbacks but with over 3 hours of study on them, I was
-              putting them in!
-            </p>
-            <p>
-              For a second time I found myself completing a challenge at a
-              reasonable pace until one part left me clueless. Now, the
-              challenge worked in my browser, but I've already seen enough memes
-              to know that it doesn't mean it works in the way it's supposed to
-              and I didn't want to be that guy. After an extra hour on the help
-              forum, I find out that to pass the written tests, all sections had
-              to be within a given function and a 3s cut and paste job let it
-              pass. one part of me was still fuming but I'm beginning to teach
-              myself how to measure success.
-            </p>
-            <p>
-              The journey helped me learn that I cannot check one array against
-              another with just the "===" operator. Reading questions more
-              carefully for technical details is essential and by talking with
-              technical support, realised that I've learned more and at the same
-              time realised that there is yet more again added to the list of
-              things I need to learn.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Tuesday 5th June 2018</h3></div>
-          <div class="article-title"><h3>Website now being hosted</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/live.jpg"
-              alt="Photo of new website"
-            />
-            <p>
-              So after a full day of working one section at a time I have
-              successfully managed to get the website ready for hosting. I had
-              to show a lot of restraint to not start fire fighting as I saw
-              other sections of my website out of line while I was progressing.
-              The footer had not been touched since the start and at one point
-              sat up above the header but I saw features through to a reasonable
-              close that would only need fine touches.
-            </p>
-            <p>
-              I am sure I will update this site and could go back to refactor it
-              but it will be a decent enough layout to help me track my
-              progression.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Monday 4th June 2018</h3></div>
-          <div class="article-title">
-            <h3>Whatcanicookwiththat.com - Site Created</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/newheader.jpg"
-              alt="Updated header photo"
-            />
-            <p>
-              Since my last post I have mainly been trying to figure out how to
-              structure content for my
-              <a href="http://whatcanicookwiththat.com/" target="_blank"
-                >whatcanicookwiththat.com</a
-              >
-              website. I'm finding it hard to be able to create something that
-              looks good before I add code. I had a general idea that I wanted
-              to create a splash page but was unsure how this would take shape
-              after. After I spent the best part of an hour trying to take
-              photos of the inside of my fridge from different angles, I settled
-              on a few choice photos so that I could work for desktop and
-              eventually, mobile. The general shape was quick but then came
-              hours of shifting until I came up with the idea of the text coming
-              in the form of a mobile phone conversation. I found that when I
-              had the plan, it was a lot simpler to be able to break up the idea
-              into sections and construct it. Yes there were errors but I knew
-              where to head.
-            </p>
-            <p>
-              I have created a minimum product that I am happy with but knew I
-              needed to create content for further pages other wise it lacked
-              real content and may cause confusion if I make it live. This is
-              where I have had to stop for now.
-            </p>
-            <p>
-              Now to work on this blog page. As it stands we have a scrolling
-              background (with ugly blue leather photo of low quality) and a
-              better looking header than I started with. That's it for now.
-              Trying to force myself to tackle one feature at a time before
-              commiting it to Git. Hard but I'm sure it'll pay off in the long
-              run. Also learned that inset box-shadow does not work on images.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Tuesday 29th May 2018</h3></div>
-          <div class="article-title"><h3>Two Domain Names Purchased</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/newSite.jpg"
-              alt="screen shot of new profile site"
-            />
-            <p>
-              A lot has gone through my mind with how to continue to learn to
-              code and in what direction to go. I have now completed a lot of
-              online courses that hold your hand through projects but I feel
-              unsatisfied that I don't have the experience of building those
-              things myself from the blank screen.
-            </p>
-            <p>
-              Currently I am completing the FlatIron School's bootcamp prep
-              course and it has covered a lot of material I have seen before but
-              has been a good reminder, having had almost 2 years away from
-              seriously attempting javascript. Another good reminder was the
-              MIMO app for iPhone. Coding on a phone isn't really a thing but
-              they manage to run through tutorials that are helpful.
-            </p>
-            <p>
-              This all brought me to the conclusion that I needed to experience
-              making something from scratch again so have opened two sites;
-              <a href="https://www.josephclander.com/" target="_blank"
-                >www.josephclander.com</a
-              >
-              and
-              <a href="http://whatcanicookwiththat.com/" target="_blank"
-                >www.whatcanicookwiththat.com</a
-              >. I can continue to write about my progress and keep a place for
-              the things that I make. Also in my spare time I love to cook and
-              often talk about it on my instagram feed. I'm doing it so much now
-              though that I feel I can make a dedicated channel to it with the
-              tag name #whatcanicookwiththat where I show how to make meals from
-              the last few remanants you find in the bottom of your fridge.
-            </p>
-            <p>
-              I've aquired the sites and domains and am now working through the
-              research for how I want these sites to look.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal css">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Friday 25th May 2018</h3></div>
-          <div class="article-title">
-            <h3>Day of viewing CSS on YouTube</h3>
-          </div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/flexbox-photo.jpg"
-              alt="flexbox icon design"
-            />
-            <p>
-              A heavy day sorting out the house today but got some passive
-              learning in. Watch videos on youtube from DevTips.
-            </p>
-            <p>
-              Catching some more experience seeing how people use SASS to style
-              their HTML and then caught up on more alignment tricks using
-              flexbox. I know that just watching this, isn't going to make it
-              stick in my mind permanently but at least it may remind me of the
-              possibilities and know what I need to look up when I'm stuck on
-              this stuff.
-            </p>
-          </div>
-        </article>
-        <article class="post reveal projects">
-          <div class="fade overlay"></div>
-          <button class="more">. . .</button>
-          <div class="date"><h3>Thursday 24th May 2018</h3></div>
-          <div class="article-title"><h3>First Post</h3></div>
-          <div class="article clearfix">
-            <img
-              class="post-photo"
-              src="Images/startBlog.jpg"
-              alt="First page of html"
-            />
-            <p>
-              This is the first post in a mock up made to record the things that
-              I pick up along the way.
-            </p>
-            <p>
-              Today is trying to build another site from the blank screen and
-              interact and map progress with Git and GitHub. After a number of
-              tutorials on using git in the terminal, I think that I am now
-              brave enough to give it a go.
-            </p>
-          </div>
-        </article>
-      </div>
-    </main>
-    <footer>
-      <div class="contact">
-        <ul>
-          <li>
-            <a href="https://github.com/josephclander" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://codepen.io/tidyjoe/" target="_blank"
-              ><i class="fab fa-codepen"></i
-            ></a>
-          </li>
-          <li>
-            <a href="mailto:josephclander@gmail.com" target="_blank"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+          <p>
+            I have only just started on this but I can already feel I’m gaining muscle memory of the structure of the
+            code.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Tuesday 15th January 2019</h3>
+        </div>
+        <div class="article-title">
+          <h3>Git Issues Resolved</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/gitError.jpg" alt="image of my error using git on github site" />
+          <p>
+            So before the holiday I updated some aspects of my html page and
+            made commits locally. I also felt the need to update the readme
+            file. I did so directly on the github website and thought nothing
+            of it. Coming back after the holiday to make further commits and
+            upload posts I wrote, git tells me that I cannot push my local
+            commits to github as it has files that I don't have. Ah!
+          </p>
+          <p>
+            I have made adjustments before and trialled new ideas on other
+            branches but this is yet to cause a merge conflict as I did not
+            make further changes on the master branch. Not only is this
+            different but it is not on seperate branches. I tried git fetch
+            then discovered I needed to use git pull to get the information
+            for the commit from the remote repository. I backed up the two
+            changes I made locally to my desktop in case this pull / merge
+            would overwrite all my work today.
+          </p>
+          <p>
+            Crisis averted. It turns out that git is smart enough to place the
+            commit I made remotely into the correct stream and I didn't have
+            to do any extra work. This is one of those occasions you should
+            note in life where the best result did occur.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal reading">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Wednesday 12th December 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Began to learn about databases and SQL</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/databases.jpg" alt="image of a database drawing" />
+          <p>
+            My website is beginning to fill up with articles and I am
+            wondering how to I could store the data elsewhere and then have
+            the website fetch it. My first look at this has opened up quite a
+            big rabbit hole as I realize I need to learn a whole new language
+            to be able to work with a database. I have waited a little while
+            before getting started but have now set aside some time to work on
+            it.
+          </p>
+
+          <p>
+            So looking around it seems that there are two main ways to use a
+            database; relational and non-relational. Looking at this with
+            paths to follow, I see the main routes on code schools is to use
+            either SQL (relational) or MongoDB (non-relational). As I have had
+            a lot of experience with spreadsheets and a little with Microsoft
+            Access, I chose SQL and MySQL as a starting point.
+          </p>
+
+          <p>
+            The tutorial I followed was by Mike Dane on behalf of
+            Freecodecamp:
+            <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY">database tutorial</a>.
+          </p>
+
+          <h3>Main Learning Points:</h3>
+
+          <h5>Issues to look out for</h5>
+
+          <p>
+            It was over 4 hours long but it helped me to set up a database
+            server on my laptop and gain experience with the commands and
+            interface. After some practice, it doesn’t seem too difficult to
+            set up and manipulate a straight forward set of data. The
+            difficulty only seems to come when that tables you are using cross
+            over and the amount of tables increases. As you have to set up a
+            step at a time, you have to be certain that if you add or delete
+            some data, it doesn’t invalidate another tables references. Making
+            sure this is done in the correct order looks like the main area
+            where you could go wrong. Well, alongside accidentally deleting
+            all of your data without specifying filters.
+          </p>
+
+          <p>
+            As I completed the tutorial, I wanted to start adding this to my
+            price comparison app
+            <a href="https://github.com/josephclander/priceComparison">github.com/josephclander/priceComparison</a>.
+            However, before diving in I wanted to see how you got the
+            website to communicate with the database and realized I would have
+            to learn either PHP or NodeJS. I probably wouldn’t have to learn
+            too much but after a few days of working out another language, I
+            needed some space before taking on another one! It’s disappointing
+            that I couldn’t start running with it straight away but I have at
+            least gained experience that will help in the future.
+          </p>
+
+          <h5>PHP or NodeJS?</h5>
+
+          <p>
+            Since finding out I need one of these two languages to speak to a
+            database, I have been researching and asking people I know about
+            which route is best and have had a mixed response. Now PHP is
+            older and not being improved on and from that perspective looks
+            like the language to avoid. However, a lot of Wordpress websites
+            have been created with it and there is still a strong share of the
+            market created with Wordpress. On the other hand, JavaScript is
+            one of the most used languages and NodeJS is very current and used
+            in more modern applications. For future proofing myself, NodeJS
+            seems to be the sensible way to go.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal reading">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Monday 10th December 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>
+            3 Meet-ups: API with Codesmith, Change Career with Skillshare and
+            Flatiron graduates fair
+          </h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/meetup.jpg" alt="meetup website logo" />
+          <h3>::: API Code Smith Meetup :::</h3>
+
+          <p>
+            So another element at progressing my career change will be to
+            become involved in the community and to see how others are
+            managing to become developers. I signed myself up for 3 meetups in
+            and around New York. The first one was with Code Smith, a coding
+            school that were offering a few evenings running through some of
+            the more complex areas of javascript. This particular one was on
+            creating a voice recognition app using APIs.
+          </p>
+
+          <p>
+            Being my first in New York, I was a little apprehensive as to what
+            kind of mix this meetup would have. How experienced are the people
+            going to be? It turned out that it was well over subscribed and
+            really had too many people in one room to make it effective
+            (around 45 showed in a room for 30 and I say this as a teacher of
+            13 years). Unfortunately, with so many people and such a long
+            build up in the Code Smith sales pitch, we didn’t even start the
+            project until after 9pm when the meetup was scheduled to finish.
+            No bother, it’s free but few people give something for nothing so
+            I just put it down to experience.
+          </p>
+
+          <h3>Main Learning Points:</h3>
+
+          <h5>Networking:</h5>
+          <p>
+            So my first experience was not great for meeting people in the
+            same place as me and learning their journeys. The first few people
+            I met were perhaps further along and didn’t see me as a useful
+            stepping stone in their progression. I could take some more
+            personal reflection and conclude that maybe I’m not that
+            interesting to talk to but if someone says abruptly, “it’s all
+            about networking” and then immediately turns their back on you to
+            talk to someone else, you didn’t stand a chance. Although I had
+            little time left, I managed to move on and strike up conversation
+            with others that was more meaningful. This is real life and not
+            everyone has time to become your friend so be helpful and things
+            will come naturally.
+          </p>
+          <br />
+
+          <h3>::: Career Change Meetup at Skillshare NY :::</h3>
+
+          <p>
+            The second of my first meetups was to be less technical and
+            focused more on the skillsets required to change career. People
+            were definitely more chatty at this event but on closer
+            inspection, those chatting turned out to be friends that knew each
+            other already. I was a bit surprised to see that people weren’t
+            getting to know each other like I thought they would at these
+            events. I said hello and asked how two people were, already sat
+            down on a row of chairs but one word responses and stares back at
+            their note pads told me it wasn’t worth forcing it.
+          </p>
+
+          <p>
+            The format was a panel of 5 people who had recently changed career
+            being asked questions by a host, with room for questions at the
+            end. Some good comments came out of it and although some of the
+            professions had aspects that wouldn’t really apply to me, there
+            were soft skills that would be useful to consider. I particularly
+            liked the input of someone that was transitioning from sales to UX
+            design within their company. They had some good points about
+            finding time to study in your new field that I liked.
+          </p>
+
+          <h3>Main Learning Points:</h3>
+
+          <h5>Find the skills required</h5>
+
+          <p>
+            When considering what you need to learn, check out job websites
+            and see what people are being asked for. See what is most in
+            demand and secondly what would be preferred skills. This tactic
+            helps you target the correct topics when deciding what you should
+            be studying.
+          </p>
+          <br />
+
+          <h3>::: Flat Iron Graduates Fair :::</h3>
+
+          <p>
+            The students at the fair were two weeks away from graduation and
+            had spent the last two weeks working on their final projects. All
+            bunched close together in a small room, were around 20 people
+            standing beside their laptops/monitors with a mini whiteboard
+            showcasing what technologies they had used. It was a great
+            opportunity to speak to the students personally about their
+            experience. My main questions were; how have you found your time
+            on the course, how does the teaching/learning take place, what
+            were your main struggles in building your project and how
+            confident are you of gaining employment now.
+          </p>
+
+          <p>
+            Having scanned the room I chose to speak with 4 people closely.
+            Each one was very proud of what they had built and was able to
+            articulate all the technologies they had used. They were all
+            impressive. The learning structure appears to be quite intensive
+            and moves at a fast pace. Students alluded to having a good
+            working knowledge of HTML, CSS and vanilla js but were quickly
+            expected to get a grip of frameworks and use them. There’s an
+            argument both ways for the pace at which they are taught at but
+            it’s clear that on a bootcamp you learn fundamentals mainly before
+            starting the course, quickly practice them in the initial weeks
+            before diving head first into more complex material. They were
+            shown key technologies then work on projects to practice, they
+            were expected to learn outside of the class regularly and use peer
+            learning. They had a meeting with a personal tutor once a week
+            although I am sure they could ask for help slightly more
+            frequently than that if necessary.
+          </p>
+
+          <h5>Main Learning Points:</h5>
+
+          <p>
+            I love the idea of having experts in the field help to guide you
+            through a curriculum so that you don’t feel you waste time.
+            However, the main benefits pushed by the students were motivation
+            and working with peers. I feel there is a chance that they will
+            have missed that this came about by the way in which they were
+            taught so that knew the right amount to explore themselves but I
+            can only go by what is said. For this reason I’m struggling to
+            evaluate the worth. My degree in the UK at a Russel Group
+            university to study Mathematics BSc came to £12k and my teacher
+            training, also at a top university, cost around £2.5k after their
+            bursary, giving a total of £14.5k for 4 years of some of the best
+            education the UK has to offer. Most coding bootcamps last around 3
+            months, are not regulated and cost $17k ($13.5k approx). To
+            compare that’s roughly the same cost for 6% of the time. Can you
+            exactly compare each route like this, maybe not but it still food
+            for thought.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Wednesday 5th December 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Web-app: Price Comparison Calculator</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/priceComparison.jpg" alt="web-app on github" />
+          <p>
+            I felt that I had completed enough tutorials and read enough
+            recently that I needed to break away and build something again.
+            researching how people put their study into practice showed me
+            that I would be most interested if I could find something that
+            would solve a problem of interest to me. Having moved to New York
+            City and spent a few months trying to acclimatize to the area, I
+            had most struggled with how expensive everywhere was, especially
+            groceries. A dull subject to find where the cheapest places to
+            shop are, but all the more reason to find a way to collate
+            information and to get all the answers easily. A standard
+            spreadsheet can record the information and be sorted but it won’t
+            spit out what you need with the other information removed. I found
+            a task.
+          </p>
+
+          <p>
+            Again this project and it’s progress can be tracked on GitHub
+            here: xxxx. I took time to consider how to collate the data. Array
+            or Object? Both have their strengths but having seen how most
+            databases work, I chose to go with each data point being stored as
+            an object. At the point of writing, I have now created a product
+            that will use the list of objects holding data about the store,
+            product, price and size and will calculate a comparison of price
+            per unit to inform of what products to purchase in which shops to
+            an html page.
+            <a href="https://github.com/josephclander/priceComparison">github.com/josephclander/priceComparison</a>
+          </p>
+
+          <h3>Main Learning Points</h3>
+
+          <h5>Storing data:</h5>
+
+          <p>
+            Having decided to go with objects rather than storing values in
+            arrays meant that I didn’t have access to all of the same methods
+            that I had used with arrays and this meant I had to think of ways
+            round sorting and comparing values. Obviously as my data has to be
+            entered manually onto the js file, it doesn’t have the best user
+            experience and led me to start research into using databases which
+            I’ll discuss in a later post.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Sunday 25th November 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>
+            Initiated second version of website using CSS grid and flexbox
+          </h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/website2.jpg" alt="image of new website on desktop" />
+          <p>
+            My blog is beginning to fill up now and it has definitely met its
+            purpose of holding all of my progress for all to see. I have come
+            along a little more now and I could benefit from a little more
+            practice in the structure and artistic edge of creating a site
+            from scratch. I wanted to make something that was visually a
+            little more pleasing but made use of the newer CSS layout
+            technologies of grid and flexbox.
+          </p>
+
+          <h3>Main Learning Points</h3>
+
+          <h5>Grid, Flexbox or both?</h5>
+          <p>
+            Through my practice and research, it seems that CSS grid is great
+            for setting up your main layout and for making your site
+            responsive with media queries with much more readable elements.
+            For individual modules in the grid cells, using flexbox and
+            container divs gives you more flexibility. It felt good getting to
+            grips with these as you could leave behind the issues created with
+            floats. Previously having to “clear” empty divs to help the flow
+            of a document, these methods move past that and create a much more
+            purpose built approach to laying out your page.
+          </p>
+
+          <h5>UX features - header on scroll</h5>
+          <p>
+            Having tried to look at my original site and adapt features, I
+            fell into the trap of designing elements that later needed to be
+            changed as I came up with new ideas. One example of this was the
+            header. Originally placed into the grid templates, the header
+            needed to be removed when I wanted to add a header that would only
+            come down once you’d passed the landing page.
+          </p>
+
+          <p>
+            Unlike other site’s pages I had seen where the header would go up
+            or down depending on the direction of scroll, I wanted it to come
+            down once the main landing page had been passed. The landing page
+            already had hyperlinks so there was no need for repetition and it
+            crowded the design that users would see. This took a while to
+            learn to create myself and helped me to see what information you
+            can gain about a page with js. Ultimately, I needed to create a
+            reference point for the section where I wanted the header to
+            emerge and then see if the scroll point from the top of the page
+            had surpassed this. I realized that you couldn’t just write emerge
+            after this distance as this would change depending on screen
+            configuration of the user.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal reading">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Monday 19th November 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Started CS50</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/cs50.jpg" alt="Photo of CS50 lecture" />
+          <p>
+            So starting this course seemed to be the smart thing to do. I have
+            been working through a lot of JavaScript challenges and had
+            successfully completed them. However, these challenges touched on
+            finding the most efficient ways of completing tasks and this led
+            me to be curious about exploring a more theoretical course to
+            help.
+          </p>
+
+          <p>
+            The first challenge used Scratch, which is a kind of “plug and
+            play” type of programming where you can move building blocks on
+            the screen to complete your tasks. This was all well and good and
+            I did it for the sake of completeness. Then the course and
+            lectures moved into what I had imagined it would cover,
+            algorithms. Having used JavaScript for so long, it was interesting
+            as they were using the programming language “C”. There are hours
+            of videos on the site and I worked my way through all of them.
+            Very interesting and helped me to feel that I was getting a
+            stronger grounding in CS theory. Starting some of the first real
+            challenges though, I began to feel that I had been putting in
+            around 5-6 hours of reading into their problems and not always
+            grasping how the lectures had supported them. I have paused my
+            work in this as currently I am unsure as to what their question is
+            asking. I am gaining good insight into what a bitmap image is and
+            how it is broken down but this is not where I wish to be spending
+            my time. This is not to say that it isn’t informative and great to
+            gain a more rounded view of issues adjacent to programming, but
+            two days of reading with nothing to show requires a pivot.
+          </p>
+
+          <h3>Main Learning Points</h3>
+
+          <h5>Algorithms:</h5>
+          <p>
+            So I have spent a long time studying the sorting algorithms and
+            have managed to write the simpler ones in javascript unaided.
+            Recursion algorithms have been looked over and studied but it
+            would take me a bit before I could build one on my own. Having
+            looked them up, I will go back to them at a later date and attempt
+            myself now that I have the idea behind how they are constructed.
+          </p>
+
+          <h5>Other programming languages:</h5>
+          <p>
+            I now appreciate how javascript parsing on the fly differs from C
+            compiling and the strengths and weaknesses of that. It also drew
+            attention to how many functions and methods modern languages now
+            have built in. This has been interesting as the rigor required to
+            complete a task drew parallels to the study I completed during my
+            Mathematics degree.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Tuesday 13th November 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Git branch and website update</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/filter.jpg" alt="snapshot of the newly added article topic filter" />
+          <p>
+            Having completed a large section of the JavaScript challenges on
+            Free Code Camp, I decided it was time to start putting some into
+            practice. As the amount of articles has grown on my site, I
+            figured that it could do with a filter for the different topics. I
+            could add another page but I felt that would really only be a copy
+            and paste job of the first page so wouldn’t really be that
+            challenging.
+          </p>
+
+          <p>
+            As I had implemented jQuery to be able to minimize articles to a
+            uniform size, I would be able to use this alongside vanilla
+            JavaScript as well. I broke the problem down into stages. What
+            would I need to see on the screen and what would be the logical
+            steps for that to happen?
+          </p>
+
+          <p>
+            This also gave me an opportunity to practice using Git branch. I
+            set up one called “siteFilter” and set about updating the site in
+            sections making sure I had a complete running code before each
+            commit.
+          </p>
+
+          <p>
+            Here are my commits with brief explanations. They have all since
+            been merged into the master branch:
+          </p>
+
+          <p>
+            <strong>1. Basic links for filtering added and styled by adding
+              additional scss partials</strong>
+          </p>
+
+          <p>
+            I decided what the categories would be. I already had some links
+            set up so I utilized them for the time being and would go back to
+            improve the design once the functionality was up and running.
+          </p>
+
+          <p><strong>2. js for active link completed</strong></p>
+
+          <p>
+            Now whichever link you click on will pick up the “.active” styling
+            and it will be removed from all the others
+          </p>
+
+          <p>
+            <strong>3. Basic use of filter javascript has been enabled for desktop
+              - if fewer than 2 articles, footer not against the bottom of the
+              page</strong>
+          </p>
+
+          <p>
+            My site will now filter the articles but has created an issue with
+            the footer
+          </p>
+
+          <p>
+            <strong>4. links made to buttons and removed for mobile screens</strong>
+          </p>
+
+          <p>
+            I updated the design and made sure it was not an issue for mobile
+            screens. This is something I can try to include at a later stage.
+          </p>
+
+          <p>
+            <strong>5. reveal button for filter tags added, styled, mediaqueries
+              adjusted</strong>
+          </p>
+
+          <p>
+            As the buttons took up space horizontally in the header, it looked
+            untidy if it was not in use. I created a button to toggle between
+            revealing these.
+          </p>
+
+          <p>
+            <strong>6. footer changed to fixed for all but mobile screens - this is
+              to fix the issue with dynamic content from tags effecting
+              placement</strong>
+          </p>
+
+          <p>
+            I’m sad to say that I was experimenting with different setups for
+            the footer but was unable to find a way to create a sticky footer.
+            One that would stick to the bottom if the content was not long
+            enough to fit the height of the window. As my site would
+            dynamically update, I couldn’t see a way to get it to work with
+            plain CSS. At this stage I did not want to venture into long js
+            code to measure the height of articles and windows and also
+            realized that in fact, maybe the links in my footer would also be
+            better if you could access them more readily.
+          </p>
+
+          <p><strong>Issues:</strong></p>
+
+          <p>
+            Accessing the elements I needed. Most of my time was spent trying
+            to see how to access my elements in the fashion that I had set
+            them up. My “a” links were inside list tags and this caused issue
+            with precedence overriding my rules.
+          </p>
+
+          <p>
+            jQuery toggle() for a links. As links are display as list-item
+            this ruined my design. This meant I had to experiment to find how
+            to access the tags and then change style of each in my array.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal js">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Wednesday 7th November 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Completed - FCC Javascript Algorithms and Data Structures</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/fcc_jscert.jpg" alt="Screen Shot of certificate from free code camp" />
+          <p>
+            It’s done. It’s done. I made it. I have now completed and passed
+            tests for the 5 projects that award certification for FCC
+            Javascript Algorithms and Data Structures. Some of the tasks were
+            easier than others. However, I have always made a point of
+            completing a task, passing the tests, and then researching to see
+            how others completed it. This has helped tremendously through the
+            earlier tasks FCC set and enabled me to have a better
+            understanding of what makes better code. Some of your code may
+            pass but is unnecessarily long, solved by brute force, has other
+            bugs or is just not as elegant and readable as it could be.
+          </p>
+
+          <p>
+            The tasks have been great (albeit frustrating at times) at
+            highlighting areas that you still need to work on. It hasn’t been
+            huge structural issues necessarily but highlighting that I may
+            still only have a surface understanding of some of the finer
+            points. For example, I passed almost all of the tests on the last
+            challenge and only had to go back and adapt to fit a particular
+            edge use case. This turned into 90% of my workload. The first
+            thing I overlooked was initializing a variable as a constant, then
+            latter wishing to change it to fit my edge case, and not
+            immediately thinking this was something to look at. So var, let,
+            const need to be part of my thought process in error checking.
+            Finer parts of regex slowed me down too and I feel this is
+            something that I will find myself needing to check references for
+            whenever completing a tricky project. Some of the tasks made me
+            consider the number of calculations the code may take and begin to
+            research more on the big O. I was writing off for and while loops
+            as more tasks were pushing to use higher order functions like
+            .map, .filter and .reduce but found in some instances like the
+            palindrome checker that they could lead to more efficient code,
+            reducing calculations.
+          </p>
+
+          <p>
+            Well now I am done there are decisions to be made. I have a paid
+            front end course to complete on
+            <a href="https://teamtreehouse.com/">teamtreehouse.com/</a> but
+            also want to get back up to speed with other front end libraries
+            they taught (and I haven’t touched for a while) such as Sass and
+            jQuery which are available in the next FCC course. Also there’s a
+            lot more reading to be done on algorithms I feel. It would be good
+            to keep this going at a steady increment so that I can take it all
+            in.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal reading">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Friday 2nd November 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Reading - Data Structures and Algorithms with JavaScript</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/data.jpg" alt="Text book front cover" />
+          <p>
+            So I am now through the FCC Intermediate Challenges unharmed and
+            more informed than when I started. Before diving headlong into the
+            final projects I thought it was time to do some more advanced
+            reading, especially since having completed lots of practical
+            challenges, I would have more chance of understanding the theory
+            in context.
+          </p>
+
+          <p>
+            I was looking at the FCC reading list for javascript and came
+            across the book “Data Structures and Algorithms with JavaScript”
+            by Michael McMillan. Now that I have a lot of practice under my
+            belt and am pretty familiar with the syntax of programming in
+            javascript, I thought this book would be good to show me best
+            practices. It would be an opportunity to write smarter, cleaner
+            code. The initial chapter seemed fairly straight forward, then we
+            moved from my very familiar use of arrays to linked lists.
+          </p>
+
+          <p>
+            Having climbed a mountain, no lets say having climbed a steep
+            hill, getting through the challenges and being close to receiving
+            a certificate from FCC in javascript, starting to look at the data
+            structures confused me. I suddenly felt that I was at the bottom
+            of another steep hill, feeling as if I hadn’t even started
+            climbing yet. The problem I’m currently having, isn’t that the
+            setup of these data structures is too taxing, but that I can’t yet
+            see why you would use them. Every challenge set so far has not
+            required any other set up other than use of an array or reference
+            to an object. Why would it be preferable to effectively build my
+            own data system and methods and functions, when there are already
+            ones available? Without this context currently, it feels as if we
+            are trying to reinvent the wheel.
+          </p>
+
+          <p>
+            Trying to read around the subject to make myself feel better, I
+            belong to the mailing list of “Learn to code with me” and received
+            a much lighter version to get me started
+            <a href="https://learntocodewith.me/posts/data-structures/">learntocodewith.me/posts/data-structures/</a>.
+          </p>
+
+          <p>
+            This work will be ongoing and I hope to learn uses and
+            applications as well as the how.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal js">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Wednesday 17th October 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>FCC: Entering the Intermediate js Coding Challenges</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/fccStartIntChal.jpg" alt="fcc list of challenges" />
+          <p>
+            I am pausing here. Just for a moment. I have now worked through
+            the lessons on Object and Function orientated programming and am
+            standing before the intermediate challenges. After I complete
+            these challenges, I can see the projects in the background to
+            complete the certification. It will be a lot of work and am
+            slightly nervous as to how I will cope with what I expect will be
+            longer, more intricate issues.
+          </p>
+
+          <p>
+            This course has now reinforced the ideas behind non-destructive
+            functions that I covered in the Flatiron School’s bootcamp program
+            and I feel better for it. Hopefully I am ready for these. See you
+            in a while…
+          </p>
+        </div>
+      </article>
+      <article class="post reveal js">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Monday 15th October 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Completing FCC Basic js Challenges</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/js_Basic_challenges.jpg" alt="page with coding challenges" />
+          <p>
+            OK as setting up in the states is taking longer than expected and
+            on top of that, the challenges of writing in javascript are
+            getting tougher, my posts are getting further and further apart.
+            However, today I hit another milestone as I finally completed all
+            16 of the
+            <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting">freecodecamp
+              basic js challenges</a>. I have had some challenges from other sites but not this many
+            in a row.
+          </p>
+
+          <p>
+            Again by taking these challenges on, I am more and more beginning
+            to be able to tackle challenges in a systematic, progressive way.
+            I am finding that the more time I spend at the start considering
+            what the logical steps should be, the easier writing the code is.
+            With experience I am more aware of what methods are available and
+            so put them to use more quickly.
+          </p>
+
+          <p>
+            It is interesting to see that there are many ways to solve
+            problems and often with a little more thought, you’ll find there
+            is an annoyingly simple approach. Yes, you’ll find you still need
+            to use loops a lot of the time but the brute force methods of
+            trying every value, in every single problem, can cause confusion
+            and adds extra levels of complexity. When completing challenges
+            and then perusing other answers, I sometimes feel there is not
+            enough clarity over what it is that makes an answer more advanced.
+            There have been some challenges that create a one line function,
+            chaining 5 or more obscure methods at once. I don’t feel the fact
+            that it is on one line makes it advanced if it is not very
+            readable. However, there have been some advanced answers that take
+            different logical approaches and find the solution quickly and
+            elegantly. There are some approaches that open your eyes to
+            further possibilities. One in particular that I saw, changed the
+            problem into a new one that would bear the same result. This can
+            enable you to get around issues with types of variables or methods
+            that you can use.
+          </p>
+
+          <p>
+            Here are the tasks I completed:
+            <a href="https://codepen.io/collection/XzwPqO/">https://codepen.io/collection/XzwPqO/</a>
+          </p>
+
+          <p>
+            I have tried to add comments as I progressed to show what my
+            thought process was at this time in my learning. On later projects
+            I also added neater, more elegant solutions I found to the tasks.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal js">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Sunday 2nd September 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>FCC: Record Collection, js Task (Revision)</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/RecordJS.jpg" alt="List of accomplished tasks" />
+          <p>
+            So now that the first certificate is through from
+            <a href="https://learn.freecodecamp.org/">freecodecamp</a>, that
+            means I should start working through the javascript tasks. Two
+            years ago I did start these in their previous setup so it feels
+            like a jump start to know that I have completed most of the basic
+            tests section. I thought it worth challenging myself to try some
+            of the tasks again though to make sure this material had stuck.
+          </p>
+
+          <p>
+            While I had a rough idea of what to do, I needed to look a few
+            things up and was not using the correct syntax. That aside, the
+            lessons I have had so far have taught me how to approach a problem
+            far better than I was initially. First of all, I made new linked
+            html and js files so that I would be able to test my work as I
+            progressed. This made the work so much easier to handle. Before I
+            would attempt to set the whole thing up in one go, then struggle
+            to see where it went wrong when it (inevitably) didn’t work first
+            time. I also attempted to break tasks down into smaller tasks
+            where possible. I started with a simple situation that worked for
+            the most straight forward request a user would have. I made sure
+            it worked and for my benefit on these challenges, commented what I
+            was doing in short statements. This enabled me to get the tasks
+            into 3 key sections and test with ease.
+          </p>
+
+          <p>
+            By having fewer new elements each time and each code chunk being
+            broken into as close to a single task as possible, I was able to
+            test and move through this work in around an hour. Two years ago I
+            am sure it annoyed me, left me wondering what on earth was going
+            wrong and it’s a great relief that this time round I feel that I
+            have made progress in my problem solving skills as well as my
+            knowledge of the programming language.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal html">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Thursday 10th August 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>
+            Back Learning in NYC and Earned FCC Responsive Web Design
+            Certificate
+          </h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/fccCert.jpg" alt="FreeCodeCamp Responsive Web Design Certificate" />
+          <p>
+            1 month on and we are finally set in New York City. I forget how
+            long it takes to set up bank accounts and all, especially when you
+            don’t exist on any financial records in the country. This has
+            slowed down the process of learning some what but over the last
+            two days, I have got back into gear and revisited my last project
+            for
+            <a href="https://learn.freecodecamp.org/">learn.freecodecamp.org</a>. It’s hard to run over something again
+            cold and move quickly. I
+            had to read my HTML a couple of times and read up on CSS Grids
+            several times before I began. As it turns out, I was very pleased
+            that I had left my work in a good position before I stopped
+            working on it. Essentially, I had completed all of the HTML to
+            pass the tests set out by FCC (minus the css media query) so
+            coming back to it now, I knew that I would mainly work on CSS with
+            just a few tweaks to the code.
+          </p>
+
+          <p>
+            I spent a lot of time going over tutorials again to try and add
+            CSS Grids to this project as I hadn’t used it in the others.
+            Unfortunately, there wasn’t too much to the site and so I don’t
+            feel that I’ve pushed myself to learn much about it at this
+            attempt. Especially as it needed a fixed sidebar. Being position
+            fixed meant that it is taken out of the regular flow anyway so I
+            basically made a two column grid with nothing in the first one.
+            You can see why I’m underwhelmed. Equally though, I didn’t see a
+            point in making the site unnecessarily complicated.
+          </p>
+
+          <p>
+            All that said, I have completed the final project of 5 on the
+            Responsive Web Design course and earned my certificate. You can
+            see it here:
+            <a href="https://www.freecodecamp.org/certification/josephclander/responsive-web-design">www.freecodecamp.org/certification/josephclander/responsive-web-design</a>.
+            While I had two gaps in this course, it has helped me to see
+            how far I have come from the first lessons learning markup, to
+            being able to look at a blank page and create a site. I feel I
+            still need to practice a lot and continue to consolidate my
+            knowledge but this is a big milestone.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Tuesday 10th July 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Building Another Website</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/philiy.jpg" alt="philiy.com website" />
+          <p>
+            Shortly, my wife and I will be moving over to New York City for
+            her work. Soon to head up the American branch of the company she
+            works for, we have been discussing a way for her to showcase all
+            the things she is doing. Although she is mentioned for her work on
+            her company website, YouTube, Linked-in and Twitter, there isn’t
+            one area that holds all the things she has done together. Knowing
+            she was interested in building a website, I quickly got onto
+            finding her chosen domain name for the best price with best
+            renewal rate. I’ve been lured into great introductory prices
+            before, then been upset to find the renewal price is more than 3
+            times the initial price annually. Even if you are not sure the
+            website will last, you don’t want to cripple your options.
+          </p>
+
+          <p>
+            There is going to be a lot to discuss and I’m sure my ability
+            might not match up to my wife’s expectations so there is going to
+            be a learning curve. There is also the matter of maintaining the
+            site. I am so far away from being able to create a CMS system,
+            that I will be required to update it manually myself.
+          </p>
+
+          <p>
+            To hold the site I’ve done the initial admin set up work; name
+            bought and linked to my web hosting space, Google tracker added
+            and the holding page is created and a new Git repository set up,
+            knowing to get my gitignore file in order this time!
+          </p>
+
+          <p>
+            You can find the site at
+            <a href="http://philiy.com/">philiy.com</a>.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal reading">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Tuesday 3rd July 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Udacity - Free Lessons on Using Git</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/Udacity.jpeg" alt="Udacity Logo" />
+          <p>
+            So I was trailing through my bookmarks that I had saved a couple
+            of years ago when I started to get interested in coding. Back then
+            I was scavenging the internet for any free materials available and
+            just saving them en masse. I thought I should go back over these
+            and have a clear out. I looked through a few but some of the
+            bigger names are dishing out some good materials that go further
+            than your usual “Hello world!” startups. I scanned through what
+            was available for free on
+            <a href="https://eu.udacity.com/course/how-to-use-git-and-github--ud775">Udacity’s website</a>
+            (there are fully paid up courses too) and saw some lessons on
+            using Git. Now I have followed a few courses on YouTube and other
+            sources that got me up and started, using this very blog in fact,
+            but this has proven to be a more in depth, highly detailed course
+            to get you practiced and is going well so far.
+          </p>
+          <p>
+            UPDATE: I have noted that there are quite a few courses on their
+            site for Git. My link takes you to the version that I used.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Tuesday 3rd July 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Adding Keyboard Accessibility</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/tabkey.jpg" alt="Photo of the tab key on a keyboard" />
+          <p>
+            As I continue to see more and more articles on improving
+            accessibility I realise that it is not until you start to test
+            your site that you see truly how it feels to navigate with certain
+            restrictions. And how annoying it gets when it just doesn't work!
+          </p>
+          <p>
+            Playing with the new faded overlay I added to the bottom of the
+            articles for asthetic purposes, I decided to just use the tab key
+            to navigate the page. Starting from the url, the tab key sent me
+            down the page to the first instance where I have an anchor. Most
+            of the articles are missed and because I added a hidden section
+            that's only revealed on clicking a div element, you can't even
+            open them to read.
+          </p>
+          <p>
+            Doing some research, I found that if I stick to the rules of
+            semantic HTML and make my div element a button element, then the
+            tab key will focus on it and simply using enter will expand the
+            selection. I did have to add the style "border: none" to break the
+            user styles again but this feels much better now.
+          </p>
+          <p>
+            This doesn't mean the problem is completely solved for keyboard
+            access. Now as you navigate the page, for any articles that you
+            don't open, you will still navigate those links unnecessarily and
+            shift the text in the article down so you can't read the headline.
+            However, an immediate fix isn't required as the tab goes to the
+            expand button first before the links so it's most likely you
+            didn't want to read it in the first place.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal reading">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Monday 2nd July 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Book Review: UX for Beginners by Joel Marsh</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/uxdesign.jpg" alt="UX for Beginners book cover of a rubber duck" />
+          <p>
+            There were many interesting things that came out of the book for
+            me. I already appreciated that UX was not a means of making a
+            beautiful design but the book had pushed to show that a great deal
+            of thought on psychology goes into the way a UX designer creates a
+            website. A lot of the approaches that caught my attention were
+            looking at how to not just make the sites accessible and intuitive
+            to the user but to make them “feel” like they were making the
+            correct choices. As a web designer, I am to look at what the
+            site’s goals are and what the user’s goals are. I need to make it
+            such that when the user gets their goal, so does the website and
+            it does need to be in that order.
+          </p>
+
+          <p>
+            It was interesting to read about the methods used to grab a user’s
+            attention; gamification, colour schemes, lining up buttons along
+            the “axes of interaction” (or not) and use of dummy prices to give
+            the look of value to name but a few. It made you look at some of
+            your most used sites in a new light as you can now critique them
+            on how they attempt to keep your attention. It also highlighted to
+            you how certain sites are trying to trick you. Hunting to find
+            buttons that have negative actions for the site or the use of
+            click-bait become even more obvious. The book doesn’t focus on
+            exposing the sneaky sites, it gives a good exposure to
+            accessibility features and how your design could be improved to
+            help all too.
+          </p>
+
+          <p>
+            When trying to design, I have now learned that aiming to solve
+            problems that you see in front of you is a better approach than
+            simply brain storming good ideas. This was quite a standout point
+            for me as you do imagine designers just sitting around trying to
+            come up with cool ideas. The approach means that as you discover
+            what the problems or limitations are, you will be able to make
+            sure all are taken note of and that fewer problems are created if
+            at all. This resonated with me from the use of Linear Programming
+            in Mathematics. This looks to form equations of all the issues and
+            graph them. You then look for the areas of the graph that area
+            valid and select the ones that give you the best result from that
+            list.
+          </p>
+
+          <p>
+            The methods used to test your site for effectiveness also have a
+            very mathematical feel to them. I have spent a long time in my
+            profession being told about how the data makes the point the
+            tester wants it too, when in reality it hasn’t been tested fairly.
+            The use of surveys appears almost pointless without leading the
+            users except for a few circumstances where minimal, factual
+            information is required. A/B testing appeals to my science
+            background as they try to use large samples and change only one
+            element. This is what makes a test fair. It also hit home about
+            how people’s memories do not always tell the truth. This applies
+            to both the user and the tester. Use of film to see user’s
+            reactions alongside facts such as the ones you can use with
+            Google’s tools will give a much more accurate picture of what is
+            going on. Again, these must be used as factually as possible and
+            not interpreted.
+          </p>
+
+          <p>
+            There were many more points made in this book worth reading. I
+            have only scratched the surface.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal css">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Saturday 23rd June 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>User Agent Styles - Hidden Issues</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/cssReset.jpg" alt="Eric Meyer's Reset Page with Chrome Dev Tools Showing User Agent Styles" />
+          <p>
+            Oh my god. How hard is it to style a button? I couldn’t believe
+            that no CSS styling would work on the submit button on my form.
+            Every site said that it was easy but I could only get width to
+            make ANY difference. With further research, it appears that the
+            user agent styles were acting strangely for me. To get any of my
+            styles to work I had to change a border that I didn’t need to
+            change. Why is that? Luckily I stumbled across this site
+            <a href="https://css-tricks.com/overriding-default-button-styles/">on overriding default button styles</a>,
+            otherwise I would have assumed that it couldn’t be done, at
+            least not by me.
+          </p>
+
+          <p>And release!</p>
+
+          <p>
+            NOTE: User Agent Styles are the CSS styles that every web browser
+            uses out of the box to style HTML. This means that if you didn’t
+            create any CSS at all to link to your document, that it would
+            still be legible, if still exceedingly dull and awkward.
+          </p>
+
+          <p>
+            While considering the topic, it reminded me that other issues I
+            had were also due to factory settings. For example, it took me
+            quite a while to discover why “margin: 0 auto” on my body tag, was
+            not centering my container div. On closer inspection the body does
+            not automatically cover 100% of the window and I had assumed it
+            did. It’s completely white and you can’t see it so why not? It
+            turned out my div <em>was</em> centred in the div! So “width:
+            100%” on the body fixed it. Although I didn’t use the following
+            technique for this issue, I had seen that you can add a single
+            pixel border to objects so that you can see them and understand
+            what they are doing until you are ready to remove them.
+          </p>
+
+          <p>
+            If these styles are becoming a menace and you want full control,
+            there are CSS stylesheets out there that will reset everything to
+            zero such as
+            <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer's Reset Tool</a>. There are ups and downs
+            to this. Yes, there will be fewer
+            styles that you are trying to override as you get to build them
+            from scratch but it also means it takes a long time. For a newbie
+            like me, it’s worth looking at the final product to see if you’ve
+            kept the code DRY (Don’t Repeat Yourself) as I may move things
+            just on a visual basis and at the end realise that every paragraph
+            tag has different padding when it truly wasn’t necessary.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Friday 22nd June 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>FreeCodeCamp projects</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/fccProjects.jpg" alt="Free Code Camp Project User Stories" />
+          <p>
+            Really noticing the work that the guys at freecodecamp have put
+            into their site over the last two years. I think we have to be
+            very grateful that there are people out there willing to create
+            these opportunities so thanks!
+          </p>
+
+          <p>
+            Re-opening my first challenges helped me to realise that I have
+            gained a better working knowledge of web development and that it
+            isn’t quite so scary anymore. Things just look more do-able.
+          </p>
+
+          <p>
+            I’m looking forward to putting more of what I’ve learned into
+            practice and starting from a blank screen again. If I feel I have
+            time it maybe worth refactoring my code for the first challenges.
+            I understand this is a more realistic daily life of a developer
+            and fixing bad ideas. So I better get on to fixing my bad ones.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal reading">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Thursday 21st June 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Learning about Accessibility</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/access.jpg" alt="Curriculum from Free Code Camp" />
+          <p>
+            Reading the
+            <a href="learn.freecodecamp.org">FreeCodeCamp</a> curriculum made
+            me realise the importance of accessibility and that I will have to
+            consider it in my markup more closely. I was aware from previous
+            classes that you needed to consider this but it showed that
+            running over previously visited material is beneficial. For
+            example, I knew that I should add alt tags to images to help those
+            with screen readers but what I didn’t realise is that if I used
+            anything as a decoration and gave it an alt tag such as “long
+            black line”, I would just be littering the screen with nonsense as
+            far as a screen reader was concerned.
+          </p>
+
+          <p>
+            I also thought little of seeing the semantic tags for main and nav
+            introduced. Now I’m more aware that this helps tell the story of
+            where elements are and their function. Not to mention my use of
+            ‘h’ tags! So I now understand that I shouldn’t have more than one
+            h1 tag as it wouldn’t really make sense to have more than one main
+            headline/title would it?
+          </p>
+
+          <p>
+            All this had made me think that beauty isn’t skin deep and I am
+            going to need to try and make sure my markup looks good on the
+            inside as well.
+          </p>
+
+          <p>
+            There are a few that I hadn’t heard of though and it made me
+            wonder how much they were used. The ‘time’ tag is definitely a new
+            one to me. I decided to look this up a bit and found an article on
+            the ever useful site of
+            <a href="https://css-tricks.com/time-element/">CSS Tricks</a>.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Thursday 21st June 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Completing online courses</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/fcc.jpg" alt="Free Code Camp Site" />
+          <p>
+            So this week has been busy and difficult to get through as many
+            lessons as I would have liked to. However, I completed the few
+            remaining lessons on
+            <a href="https://flatironschool.com/">flatironschool.com</a> and
+            it inspired me to look up more videos on the use of jQuery. It has
+            led me to try out collapsible sections in my articles that work a
+            little better than with the target selector. For future reference
+            I placed my work in
+            <a href="https://codepen.io/tidyjoe/pen/YvxaqK">Codepen</a> so
+            that I can remind myself or use it as a component for future work.
+            I have spelled out the issues I had in implementing it and where I
+            could take it further there.
+          </p>
+
+          <p>
+            I have now placed it onto my site in the updated form and am
+            reasonably happy with it. Feeling like I’m writing a school
+            science report, I would say that, if I were to try this again I
+            would like to find a way to blur the text at the bottom of the
+            page as it appears as if it has been cut off. I wasn’t able to
+            successfully do this with an inset box-shadow because I have a
+            background colour (I think) which makes me think that I would need
+            to add a div that also transitions on selection.
+          </p>
+
+          <p>
+            It feels bitter sweet to have finished all the labs on javaScript.
+            While I liked the difficulty of the challenges, I mostly spent my
+            time trying to figure out if issues occurred in my code because of
+            a written error or a misunderstanding of the way the test had to
+            be submitted, which wasn’t always consistent. This could double
+            the amount of time spent on a challenge and obviously add greatly
+            to self doubt. I imagine if I were working in a team, these would
+            be issues that you would quickly communicate and solve.
+          </p>
+
+          <p>
+            I’m not ready to move onto the Ruby part of the induction and want
+            to play with frontend a little more. I am going to head back to
+            <a href="learn.freecodecamp.org">FreeCodeCamp</a> that I first
+            completed some lessons for over two years ago. It looks like the
+            site has been updated and looks pretty swish and it has a
+            structured certification too.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Wednesday 13th June 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Experiment with ":target" selector</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/codepen_reveal.jpg" alt="Photo of codepen public post" />
+          <p>
+            So I started to consider the fact that my posts are getting longer
+            here as the content is becoming more complex. I am concerned that
+            it will become boring to look back on but for the moment I'll just
+            settle for a way to hide some of the content until I'm ready to
+            read it.
+          </p>
+          <p>
+            Rather than try it out on the site directly, I have been
+            experimenting in
+            <a href="https://codepen.io/tidyjoe/pen/bKRLop">Codepen</a> to see
+            what the effect would be. You can check it out but I see that my
+            next module on the Flatiron Bootcamp is all on jQuery. The little
+            experience I've had of this tells me that a far smoother and more
+            elegant solution is just around the corner.
+          </p>
+          <p>
+            I am starting to create these more often and try to document them
+            so that I can refer back to them later.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal js">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Tuesday 12th June 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Changing how I consider success</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/JavaScriptLearn.jpg" alt="Flatiron Online Bootcamp Photo" />
+          <p>
+            During this week I managed to complete another module of the
+            JavaScript section of the
+            <a href="https://learn.co/tracks/bootcamp-prep">Flatiron School Bootcamp Prep</a>. Whilst a lot of the
+            material is straight forward with a few
+            examples, there are parts of JavaScript that took me a while to
+            comprehend. Namely, "callbacks".
+          </p>
+          <p>
+            After reading the material on the website, there were links for
+            further resources and I found myself falling down a wormhole, as
+            one article led to a little more understanding, followed by
+            further mystery. As it turned out, the coding challenges didn't
+            require callbacks but with over 3 hours of study on them, I was
+            putting them in!
+          </p>
+          <p>
+            For a second time I found myself completing a challenge at a
+            reasonable pace until one part left me clueless. Now, the
+            challenge worked in my browser, but I've already seen enough memes
+            to know that it doesn't mean it works in the way it's supposed to
+            and I didn't want to be that guy. After an extra hour on the help
+            forum, I find out that to pass the written tests, all sections had
+            to be within a given function and a 3s cut and paste job let it
+            pass. one part of me was still fuming but I'm beginning to teach
+            myself how to measure success.
+          </p>
+          <p>
+            The journey helped me learn that I cannot check one array against
+            another with just the "===" operator. Reading questions more
+            carefully for technical details is essential and by talking with
+            technical support, realised that I've learned more and at the same
+            time realised that there is yet more again added to the list of
+            things I need to learn.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Tuesday 5th June 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Website now being hosted</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/live.jpg" alt="Photo of new website" />
+          <p>
+            So after a full day of working one section at a time I have
+            successfully managed to get the website ready for hosting. I had
+            to show a lot of restraint to not start fire fighting as I saw
+            other sections of my website out of line while I was progressing.
+            The footer had not been touched since the start and at one point
+            sat up above the header but I saw features through to a reasonable
+            close that would only need fine touches.
+          </p>
+          <p>
+            I am sure I will update this site and could go back to refactor it
+            but it will be a decent enough layout to help me track my
+            progression.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Monday 4th June 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Whatcanicookwiththat.com - Site Created</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/newheader.jpg" alt="Updated header photo" />
+          <p>
+            Since my last post I have mainly been trying to figure out how to
+            structure content for my
+            <a href="http://whatcanicookwiththat.com/" target="_blank">whatcanicookwiththat.com</a>
+            website. I'm finding it hard to be able to create something that
+            looks good before I add code. I had a general idea that I wanted
+            to create a splash page but was unsure how this would take shape
+            after. After I spent the best part of an hour trying to take
+            photos of the inside of my fridge from different angles, I settled
+            on a few choice photos so that I could work for desktop and
+            eventually, mobile. The general shape was quick but then came
+            hours of shifting until I came up with the idea of the text coming
+            in the form of a mobile phone conversation. I found that when I
+            had the plan, it was a lot simpler to be able to break up the idea
+            into sections and construct it. Yes there were errors but I knew
+            where to head.
+          </p>
+          <p>
+            I have created a minimum product that I am happy with but knew I
+            needed to create content for further pages other wise it lacked
+            real content and may cause confusion if I make it live. This is
+            where I have had to stop for now.
+          </p>
+          <p>
+            Now to work on this blog page. As it stands we have a scrolling
+            background (with ugly blue leather photo of low quality) and a
+            better looking header than I started with. That's it for now.
+            Trying to force myself to tackle one feature at a time before
+            commiting it to Git. Hard but I'm sure it'll pay off in the long
+            run. Also learned that inset box-shadow does not work on images.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Tuesday 29th May 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Two Domain Names Purchased</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/newSite.jpg" alt="screen shot of new profile site" />
+          <p>
+            A lot has gone through my mind with how to continue to learn to
+            code and in what direction to go. I have now completed a lot of
+            online courses that hold your hand through projects but I feel
+            unsatisfied that I don't have the experience of building those
+            things myself from the blank screen.
+          </p>
+          <p>
+            Currently I am completing the FlatIron School's bootcamp prep
+            course and it has covered a lot of material I have seen before but
+            has been a good reminder, having had almost 2 years away from
+            seriously attempting javascript. Another good reminder was the
+            MIMO app for iPhone. Coding on a phone isn't really a thing but
+            they manage to run through tutorials that are helpful.
+          </p>
+          <p>
+            This all brought me to the conclusion that I needed to experience
+            making something from scratch again so have opened two sites;
+            <a href="https://www.josephclander.com/" target="_blank">www.josephclander.com</a>
+            and
+            <a href="http://whatcanicookwiththat.com/" target="_blank">www.whatcanicookwiththat.com</a>. I can continue
+            to write about my progress and keep a place for
+            the things that I make. Also in my spare time I love to cook and
+            often talk about it on my instagram feed. I'm doing it so much now
+            though that I feel I can make a dedicated channel to it with the
+            tag name #whatcanicookwiththat where I show how to make meals from
+            the last few remanants you find in the bottom of your fridge.
+          </p>
+          <p>
+            I've aquired the sites and domains and am now working through the
+            research for how I want these sites to look.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal css">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Friday 25th May 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>Day of viewing CSS on YouTube</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/flexbox-photo.jpg" alt="flexbox icon design" />
+          <p>
+            A heavy day sorting out the house today but got some passive
+            learning in. Watch videos on youtube from DevTips.
+          </p>
+          <p>
+            Catching some more experience seeing how people use SASS to style
+            their HTML and then caught up on more alignment tricks using
+            flexbox. I know that just watching this, isn't going to make it
+            stick in my mind permanently but at least it may remind me of the
+            possibilities and know what I need to look up when I'm stuck on
+            this stuff.
+          </p>
+        </div>
+      </article>
+      <article class="post reveal projects">
+        <div class="fade overlay"></div>
+        <button class="more">. . .</button>
+        <div class="date">
+          <h3>Thursday 24th May 2018</h3>
+        </div>
+        <div class="article-title">
+          <h3>First Post</h3>
+        </div>
+        <div class="article clearfix">
+          <img class="post-photo" src="Images/startBlog.jpg" alt="First page of html" />
+          <p>
+            This is the first post in a mock up made to record the things that
+            I pick up along the way.
+          </p>
+          <p>
+            Today is trying to build another site from the blank screen and
+            interact and map progress with Git and GitHub. After a number of
+            tutorials on using git in the terminal, I think that I am now
+            brave enough to give it a go.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <div class="contact">
+      <ul>
+        <li>
+          <a href="https://github.com/josephclander" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://codepen.io/tidyjoe/" target="_blank"><i class="fab fa-codepen"></i></a>
+        </li>
+        <li>
+          <a href="mailto:josephclander@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
