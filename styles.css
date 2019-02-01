@@ -88,6 +88,7 @@ Media Queries
 Resets
 ***************************************/
 body,
+ul,
 h1,
 h2,
 h3 {
@@ -235,6 +236,9 @@ header {
 
 .article {
   position: relative; }
+
+.article > ul {
+  margin-bottom: 1em; }
 
 .post-photo {
   float: left;
