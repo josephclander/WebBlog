@@ -6,7 +6,6 @@ Github results box API
   fetch("https://api.github.com/users/josephclander")
     .then(response => response.json())
     .then(myJson => {
-	  console.log(myJson);
 	  let repos = document.querySelector('#js-repositories');
 		repos.innerHTML = myJson.public_repos;
 	});
